@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "2021-ford-explorer-mmp-1-1595540826_nowat.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
