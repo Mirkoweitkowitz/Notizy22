@@ -22,32 +22,32 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
         emailTF.delegate = self
         passwordTF.delegate = self
-      
-//        MARK: - Check for User logged in
-        guard let uid = Auth.auth().currentUser?.uid else {
-              return print("no current user!")
-            }
-            if !uid.isEmpty{
-              print("USER: \(uid)")
-              faceId()
-            }
         
-    
+        //        MARK: - Check for User logged in FireBase
+        guard let uid = Auth.auth().currentUser?.uid else {
+            return print("no current user!")
+        }
+        if !uid.isEmpty{
+            print("USER: \(uid)")
+            faceId()
+        }
+        
+        
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.endEditing(true)
         return false
     }
     
-
-
+    
+    
     
     
     @IBAction func logging(_ sender: UIButton) {
         
         let email = emailTF.text!
         let password = passwordTF.text!
-       
+        
         
         
         if !email.isEmpty && !password.isEmpty {
@@ -64,7 +64,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             
         }
         
-     
+        
     }
     
     func showMessage(title: String?, message: String?) {
@@ -74,8 +74,11 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         self.present(alertController, animated: true, completion: nil)
         
         
-       
+        
     }
+    
+//    MARK: - Face ID zur anmeldung eingebunden
+    
     func faceId (){
         let context = LAContext()
         
@@ -89,19 +92,19 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { (success, error) in
                 if success {
                     DispatchQueue.main.async { [unowned self] in
-//                        self.showMessage(title: "Login Successful", message: nil)
-                        
+                       
+//                        MARK: BarItem sichbar gemacht & ein gesicht gegeben
                         tabBarItem.title = "Account"
                         tabBarController?.tabBar.items![4].title = "Account"
                         tabBarController?.tabBar.items![4].image =
                         UIImage(systemName: "brain.head.profile")
-
-                      performSegue(withIdentifier: "backtohome", sender: self )
+                        
+                        performSegue(withIdentifier: "backtohome", sender: self )
                     }
                 } else {
                     DispatchQueue.main.async { [unowned self] in
                         self.showMessage(title: "Login Failed", message: error?.localizedDescription)
-                      
+                        
                     }
                 }
             }

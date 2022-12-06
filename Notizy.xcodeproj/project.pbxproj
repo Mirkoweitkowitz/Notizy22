@@ -40,6 +40,8 @@
 		4054F05728C9CB5100710F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4054F05528C9CB5100710F30 /* Main.storyboard */; };
 		4054F05928C9CB5300710F30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4054F05828C9CB5300710F30 /* Assets.xcassets */; };
 		4054F05C28C9CB5300710F30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4054F05A28C9CB5300710F30 /* LaunchScreen.storyboard */; };
+		4055DA76293FAFCC00FFD37C /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055DA75293FAFCC00FFD37C /* QRViewController.swift */; };
+		4055DA78293FB08700FFD37C /* DocumentenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055DA77293FB08700FFD37C /* DocumentenViewController.swift */; };
 		4071F3D1292B8C8B00C256BF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4071F3D0292B8C8B00C256BF /* SettingsView.swift */; };
 		4071F3D3292B8E4000C256BF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4071F3D2292B8E4000C256BF /* Settings.swift */; };
 		4071F3D8292B90D200C256BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4071F3D7292B90D200C256BF /* ViewController.swift */; };
@@ -56,7 +58,7 @@
 		40BB970428DD99DE000ECDCE /* Notizy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40BB970228DD99DE000ECDCE /* Notizy.xcdatamodeld */; };
 		40C40ACC291A878E00F651F9 /* UserImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C40ACB291A878E00F651F9 /* UserImageView.swift */; };
 		40D23BE8290165DA0056B3AF /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D23BE7290165DA0056B3AF /* SignUpVC.swift */; };
-		40D341EC28CB5C420044B470 /* TableNotizyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D341EB28CB5C420044B470 /* TableNotizyVC.swift */; };
+		40D341EC28CB5C420044B470 /* NotizyHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D341EB28CB5C420044B470 /* NotizyHomeVC.swift */; };
 		40D341F028CB64700044B470 /* SaveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D341EF28CB64700044B470 /* SaveVC.swift */; };
 		40D341F228CB64800044B470 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D341F128CB64800044B470 /* EditVC.swift */; };
 		40D341F428CB75BE0044B470 /* ContactTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D341F328CB75BE0044B470 /* ContactTVC.swift */; };
@@ -91,6 +93,8 @@
 		4054F05828C9CB5300710F30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4054F05B28C9CB5300710F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4054F05D28C9CB5300710F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4055DA75293FAFCC00FFD37C /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		4055DA77293FB08700FFD37C /* DocumentenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentenViewController.swift; sourceTree = "<group>"; };
 		4071F3D0292B8C8B00C256BF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4071F3D2292B8E4000C256BF /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		4071F3D7292B90D200C256BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +113,7 @@
 		40BB970328DD99DE000ECDCE /* Notizy.Model.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = Notizy.Model.xcdatamodel; sourceTree = "<group>"; };
 		40C40ACB291A878E00F651F9 /* UserImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageView.swift; sourceTree = "<group>"; };
 		40D23BE7290165DA0056B3AF /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		40D341EB28CB5C420044B470 /* TableNotizyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNotizyVC.swift; sourceTree = "<group>"; };
+		40D341EB28CB5C420044B470 /* NotizyHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotizyHomeVC.swift; sourceTree = "<group>"; };
 		40D341EF28CB64700044B470 /* SaveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveVC.swift; sourceTree = "<group>"; };
 		40D341F128CB64800044B470 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 		40D341F328CB75BE0044B470 /* ContactTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTVC.swift; sourceTree = "<group>"; };
@@ -262,7 +266,8 @@
 		40A66830291413A60096C63A /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				40D341EB28CB5C420044B470 /* TableNotizyVC.swift */,
+				40221BEE29364E1B00301834 /* NotizenGeschichteVC.swift */,
+				40D341EB28CB5C420044B470 /* NotizyHomeVC.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -296,7 +301,6 @@
 				40D341F128CB64800044B470 /* EditVC.swift */,
 				40D341EF28CB64700044B470 /* SaveVC.swift */,
 				40D341F328CB75BE0044B470 /* ContactTVC.swift */,
-				40221BEE29364E1B00301834 /* NotizenGeschichteVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -347,6 +351,8 @@
 			children = (
 				403E310D291E5830005A7A62 /* ScanCVC.swift */,
 				40DF1F89293A2DCF0071C23C /* ScannerViewController.swift */,
+				4055DA75293FAFCC00FFD37C /* QRViewController.swift */,
+				4055DA77293FB08700FFD37C /* DocumentenViewController.swift */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -472,6 +478,7 @@
 				4071F3DA292B91A300C256BF /* FUserDefaultsPropertyWrapper.swift in Sources */,
 				4071F3D1292B8C8B00C256BF /* SettingsView.swift in Sources */,
 				40E1184F292F6FA00056EE46 /* MyColorPicker.swift in Sources */,
+				4055DA76293FAFCC00FFD37C /* QRViewController.swift in Sources */,
 				4098AB562919394300EBBD90 /* PageViewController.swift in Sources */,
 				4071F3DC292B91E400C256BF /* FontSizeView.swift in Sources */,
 				40DBC933291567AE00EC71E0 /* SwiftUIViewtest.swift in Sources */,
@@ -485,7 +492,7 @@
 				40DF07AD28EC82B00043224A /* TableCollectionViewCell.swift in Sources */,
 				4071F3D8292B90D200C256BF /* ViewController.swift in Sources */,
 				4054F05028C9CB5100710F30 /* AppDelegate.swift in Sources */,
-				40D341EC28CB5C420044B470 /* TableNotizyVC.swift in Sources */,
+				40D341EC28CB5C420044B470 /* NotizyHomeVC.swift in Sources */,
 				402DB4BE292E681200ED86E8 /* NotizenCVC.swift in Sources */,
 				40D341F428CB75BE0044B470 /* ContactTVC.swift in Sources */,
 				40DF07AB28EC82620043224A /* CollectionTableViewCell.swift in Sources */,
@@ -494,6 +501,7 @@
 				40C40ACC291A878E00F651F9 /* UserImageView.swift in Sources */,
 				40A2A4192930DE5A00ED5E9F /* ContentViewNotizyPopUp.swift in Sources */,
 				4098AB5B29193BF100EBBD90 /* CoreDaten.swift in Sources */,
+				4055DA78293FB08700FFD37C /* DocumentenViewController.swift in Sources */,
 				40D341F228CB64800044B470 /* EditVC.swift in Sources */,
 				409AE24528FD914D00617481 /* NotizyCVC.swift in Sources */,
 				4071F3DE292BA91300C256BF /* DetailCollectionView.swift in Sources */,

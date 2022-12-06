@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="54w-PJ-GLy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="54w-PJ-GLy">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -62,10 +62,6 @@
         <scene sceneID="Lpc-Qm-4Wc">
             <objects>
                 <viewController id="t6e-Iv-p6O" customClass="SaveVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xsb-RC-oJy"/>
-                        <viewControllerLayoutGuide type="bottom" id="b8s-ok-sw7"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XB2-3k-PoS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +85,7 @@
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adresse" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cR3-ky-JTh">
-                                <rect key="frame" x="17" y="253" width="342" height="34"/>
+                                <rect key="frame" x="17" y="300" width="342" height="34"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="mRT-Vh-HEh"/>
@@ -98,7 +94,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H7q-aP-5sW">
-                                <rect key="frame" x="17" y="320" width="342" height="34"/>
+                                <rect key="frame" x="17" y="367" width="342" height="34"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="CEl-Gy-bf2"/>
@@ -107,7 +103,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6aj-1m-Iuw">
-                                <rect key="frame" x="16" y="444" width="343" height="133"/>
+                                <rect key="frame" x="16" y="491" width="343" height="133"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="133" id="dnP-t5-7PY"/>
@@ -117,7 +113,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12e-Dl-F0Y">
-                                <rect key="frame" x="17" y="188" width="342" height="34"/>
+                                <rect key="frame" x="17" y="235" width="342" height="34"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="EIh-ZE-e9h"/>
@@ -126,12 +122,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bildschirmfoto 2022-09-16 um 10.35.55" translatesAutoresizingMaskIntoConstraints="NO" id="uN6-MY-c4L">
-                                <rect key="frame" x="68" y="37" width="240" height="128"/>
+                                <rect key="frame" x="68" y="84" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="LqD-Bh-AwM"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="eFP-uh-KjR"/>
                         <color key="backgroundColor" red="0.54632492281031786" green="0.54963851197695579" blue="0.53361185001301226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="12e-Dl-F0Y" firstAttribute="top" secondItem="uN6-MY-c4L" secondAttribute="bottom" constant="23" id="2T6-7e-XeN"/>
@@ -144,7 +141,7 @@
                             <constraint firstItem="6aj-1m-Iuw" firstAttribute="leading" secondItem="XB2-3k-PoS" secondAttribute="leadingMargin" id="PHh-Wq-Nop"/>
                             <constraint firstItem="H7q-aP-5sW" firstAttribute="top" secondItem="cR3-ky-JTh" secondAttribute="bottom" constant="33" id="SF7-L4-weB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uN6-MY-c4L" secondAttribute="trailing" constant="51" id="Xos-tx-2va"/>
-                            <constraint firstItem="uN6-MY-c4L" firstAttribute="top" secondItem="xsb-RC-oJy" secondAttribute="bottom" constant="37" id="Xwh-Zj-g3b"/>
+                            <constraint firstItem="uN6-MY-c4L" firstAttribute="top" secondItem="eFP-uh-KjR" secondAttribute="top" constant="37" id="Xwh-Zj-g3b"/>
                             <constraint firstItem="cR3-ky-JTh" firstAttribute="top" secondItem="12e-Dl-F0Y" secondAttribute="bottom" constant="31" id="YTf-Jc-aIe"/>
                             <constraint firstItem="H7q-aP-5sW" firstAttribute="trailing" secondItem="XB2-3k-PoS" secondAttribute="trailingMargin" id="eY6-G5-7vj"/>
                             <constraint firstItem="12e-Dl-F0Y" firstAttribute="trailing" secondItem="XB2-3k-PoS" secondAttribute="trailingMargin" id="veC-tK-ghe"/>
@@ -166,11 +163,7 @@
         <!--Notizy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Notizy" id="BYZ-38-t0r" customClass="TableNotizyVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SPW-uk-vAd"/>
-                        <viewControllerLayoutGuide type="bottom" id="ee5-lK-WUf"/>
-                    </layoutGuides>
+                <viewController title="Notizy" id="BYZ-38-t0r" customClass="NotizyHomeVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3my-yZ-BRw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -179,7 +172,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4d-NS-leb">
-                                <rect key="frame" x="0.0" y="51" width="238" height="543"/>
+                                <rect key="frame" x="0.0" y="98" width="238" height="530"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="4D9-h7-ohQ">
                                         <rect key="frame" x="44" y="-28" width="75" height="77"/>
@@ -243,7 +236,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JR4-1O-5dT">
-                                        <rect key="frame" x="10.333333333333332" y="272" width="54.333333333333343" height="264.33333333333326"/>
+                                        <rect key="frame" x="10.333333333333332" y="259" width="54.333333333333343" height="264.33333333333326"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sD-4M-Azr">
                                                 <rect key="frame" x="0.0" y="0.0" width="54.333333333333336" height="34.333333333333336"/>
@@ -266,13 +259,13 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="scanner.fill" catalog="system"/>
                                                 <connections>
-                                                    <segue destination="Ruq-kW-k2u" kind="show" identifier="scannerView" id="0hj-tp-IA6"/>
+                                                    <segue destination="wyn-sG-88e" kind="show" id="nnu-7w-NxT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTy-uV-23H">
                                                 <rect key="frame" x="0.0" y="114.99999999999999" width="54.333333333333336" height="34.333333333333329"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="arrow.up.forward.app" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="envelope.arrow.triangle.branch" catalog="system"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKs-a1-cwB">
                                                 <rect key="frame" x="0.0" y="153.33333333333331" width="54.333333333333336" height="34.333333333333343"/>
@@ -304,7 +297,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="DnO-VU-kob">
-                                        <rect key="frame" x="79.000000000000014" y="282" width="144.33333333333337" height="245"/>
+                                        <rect key="frame" x="79.000000000000014" y="269" width="144.33333333333337" height="245"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meine Notizen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLV-BL-8zf">
                                                 <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="17"/>
@@ -324,8 +317,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wiederherstellen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9v-2c-RGK">
-                                                <rect key="frame" x="0.0" y="114" width="109.66666666666667" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versenden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9v-2c-RGK">
+                                                <rect key="frame" x="0.0" y="114" width="69" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -376,7 +369,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gND-Jl-Asn">
-                                <rect key="frame" x="286" y="646" width="60" height="60"/>
+                                <rect key="frame" x="286" y="680" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.52941185239999999" green="0.52941185239999999" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="THA-g2-ri1"/>
@@ -394,18 +387,19 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="3qr-Yq-vq2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="F08-DR-5At" secondAttribute="trailing" id="DVs-Cz-SWl"/>
-                            <constraint firstItem="ee5-lK-WUf" firstAttribute="top" secondItem="gND-Jl-Asn" secondAttribute="bottom" constant="15" id="GWc-1I-YuR"/>
-                            <constraint firstAttribute="trailing" secondItem="e4d-NS-leb" secondAttribute="trailing" constant="137" id="JkK-Sa-QKQ"/>
-                            <constraint firstItem="e4d-NS-leb" firstAttribute="leading" secondItem="3my-yZ-BRw" secondAttribute="leading" id="LmH-2r-CS2"/>
+                            <constraint firstItem="3qr-Yq-vq2" firstAttribute="trailing" secondItem="F08-DR-5At" secondAttribute="trailing" id="DVs-Cz-SWl"/>
+                            <constraint firstItem="3qr-Yq-vq2" firstAttribute="bottom" secondItem="gND-Jl-Asn" secondAttribute="bottom" constant="15" id="GWc-1I-YuR"/>
+                            <constraint firstItem="3qr-Yq-vq2" firstAttribute="trailing" secondItem="e4d-NS-leb" secondAttribute="trailing" constant="137" id="JkK-Sa-QKQ"/>
+                            <constraint firstItem="e4d-NS-leb" firstAttribute="leading" secondItem="3qr-Yq-vq2" secondAttribute="leading" id="LmH-2r-CS2"/>
                             <constraint firstItem="F08-DR-5At" firstAttribute="top" secondItem="3my-yZ-BRw" secondAttribute="top" id="Xkf-W5-4MT"/>
-                            <constraint firstItem="ee5-lK-WUf" firstAttribute="top" secondItem="e4d-NS-leb" secondAttribute="bottom" constant="127" id="Zrg-bV-Wcn"/>
+                            <constraint firstItem="3qr-Yq-vq2" firstAttribute="bottom" secondItem="e4d-NS-leb" secondAttribute="bottom" constant="127" id="Zrg-bV-Wcn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gND-Jl-Asn" secondAttribute="trailing" constant="13" id="ixk-6K-Z4v"/>
-                            <constraint firstItem="e4d-NS-leb" firstAttribute="top" secondItem="SPW-uk-vAd" secondAttribute="bottom" constant="51" id="rR4-Dd-Rhl"/>
+                            <constraint firstItem="e4d-NS-leb" firstAttribute="top" secondItem="3qr-Yq-vq2" secondAttribute="top" constant="51" id="rR4-Dd-Rhl"/>
                             <constraint firstAttribute="bottom" secondItem="F08-DR-5At" secondAttribute="bottom" id="rVQ-78-yWU"/>
-                            <constraint firstItem="F08-DR-5At" firstAttribute="leading" secondItem="3my-yZ-BRw" secondAttribute="leading" id="umN-R8-c0N"/>
+                            <constraint firstItem="F08-DR-5At" firstAttribute="leading" secondItem="3qr-Yq-vq2" secondAttribute="leading" id="umN-R8-c0N"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" badgeValue="Home" id="yna-fz-FUx"/>
@@ -437,104 +431,92 @@
         <scene sceneID="n46-pJ-0kV">
             <objects>
                 <viewController id="0EC-UW-90W" customClass="NotizenGeschichteVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5hx-XL-Msq"/>
-                        <viewControllerLayoutGuide type="bottom" id="gYz-Di-c4P"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hWm-bx-7tS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotizyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="k5S-8D-nVj">
-                                <rect key="frame" x="0.0" y="-47" width="375" height="802"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="789"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXe-SP-50D">
-                                <rect key="frame" x="16" y="56" width="343" height="657"/>
-                                <color key="backgroundColor" red="0.63914536978259229" green="0.63914536978259229" blue="0.63914536978259229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Inhalt">
-                                        <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" metaFont="system" size="18"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <mutableString key="content">Notizen dienen dazu, einen Sachverhalt schnell und in Kurzform schriftlich festzuhalten, bevor seine Einzelheiten vom Verfasser vergessen werden. Der Text besitzt mehr Beweiskraft als die bloße Erinnerung. Die Aufzeichnungen dienen deshalb nicht nur dem eigenen Gebrauch, sondern auch als Beweismittel.
-
-Eine Notiz dient auch der Erinnerung an zu erledigende Aufgaben oder Termine, oder hilft, umfangreiche Informationen in kurzer Form festzuhalten. Besonders geeignet für Notizen ist die Stenografie wegen ihrer Kompaktheit und Schnelligkeit (Kurznotiz). Diktiergeräte können auch dazu verwendet werden, um Notizen mündlich festzuhalten. </mutableString>
-                                        <attributes>
-                                            <color key="NSColor" red="0.228662163" green="0.2118475735" blue="0.9637251496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="                           ">
-                                        <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Allgemeines">
-                                        <attributes>
-                                            <color key="NSColor" red="0.015871227418199168" green="0.059287177977785731" blue="0.063506155303030276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.015871227418199168" green="0.059287177977785731" blue="0.063506155303030276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <mutableString key="content">„Notiz von etwas nehmen“ heißt Erkundigungen über einen Sachverhalt einholen.[2] In Kabale und Liebe von Friedrich Schiller (1784) sagt der Stadtmusikant Miller: „Hab‘ ihm’s Mädel nicht nachgeworfen; wer nimmt Notiz davon?“.[3] August von Platen-Hallermünde schrieb 1848: „Ich habe genialische Notizen von Zeit zu Zeit mir angefertiget“.[4] Die Gebrüder Grimm vermerkten 1889 in ihrem Deutschen Wörterbuch, dass ursprünglich mit „Notiz“ die Kenntnis oder Nachricht bezeichnet wurde.[5]
-
-Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. Sein philosophisch-literarisches Hauptwerk Die Notizen umfasst viele hundert notizenhafte Einträge, die immer wieder dieselben Themen umkreisen.</mutableString>
-                                        <attributes>
-                                            <color key="NSColor" red="0.18336686490000001" green="0.16723963620000001" blue="0.99642759560000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUb-d5-lB2">
+                                <rect key="frame" x="0.0" y="134" width="375" height="655"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <searchBar contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rkf-xQ-buE">
+                                <rect key="frame" x="116" y="0.0" width="243" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="d4e-a7-JQL"/>
+                                    <constraint firstAttribute="height" constant="44" id="hWw-Nk-AyI"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0EC-UW-90W" id="nHV-j2-d64"/>
+                                </connections>
+                            </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geschichte der Notiz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFw-5D-6r1">
-                                <rect key="frame" x="16" y="24" width="343" height="24"/>
+                                <rect key="frame" x="16" y="102" width="343" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQj-EO-xfS">
+                                <rect key="frame" x="18" y="4" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QOq-gj-jeP"/>
+                                    <constraint firstAttribute="width" constant="40" id="ns0-aA-Rtx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="goBack:" destination="0EC-UW-90W" eventType="touchUpInside" id="5Bs-DA-98T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNv-N7-BJy">
+                                <rect key="frame" x="68" y="4" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="PdG-qe-hvp"/>
+                                    <constraint firstAttribute="height" constant="40" id="iaw-ri-0hI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.right" catalog="system"/>
+                                <connections>
+                                    <action selector="goForward:" destination="0EC-UW-90W" eventType="touchUpInside" id="iC6-Wn-d7B"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Yu-bW-fBI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="k5S-8D-nVj" firstAttribute="top" secondItem="5hx-XL-Msq" secondAttribute="bottom" constant="-47" id="0tM-oR-CN2"/>
+                            <constraint firstItem="k5S-8D-nVj" firstAttribute="top" secondItem="3Yu-bW-fBI" secondAttribute="top" constant="-47" id="0tM-oR-CN2"/>
+                            <constraint firstItem="TQj-EO-xfS" firstAttribute="width" secondItem="LNv-N7-BJy" secondAttribute="width" multiplier="0.953488" constant="1.860465116279066" id="2w8-lj-eqy"/>
+                            <constraint firstItem="LNv-N7-BJy" firstAttribute="leading" secondItem="TQj-EO-xfS" secondAttribute="trailing" constant="10" id="5id-d7-J2M"/>
                             <constraint firstItem="UFw-5D-6r1" firstAttribute="leading" secondItem="hWm-bx-7tS" secondAttribute="leadingMargin" id="9zN-Cn-U9d"/>
                             <constraint firstAttribute="trailingMargin" secondItem="k5S-8D-nVj" secondAttribute="trailing" constant="-16" id="Abz-I2-eDk"/>
-                            <constraint firstItem="gXe-SP-50D" firstAttribute="leading" secondItem="UFw-5D-6r1" secondAttribute="leading" id="DGr-8P-wLz"/>
-                            <constraint firstItem="gYz-Di-c4P" firstAttribute="top" secondItem="k5S-8D-nVj" secondAttribute="bottom" constant="-34" id="Ezy-u0-iJR"/>
-                            <constraint firstItem="gXe-SP-50D" firstAttribute="top" secondItem="UFw-5D-6r1" secondAttribute="bottom" constant="8" id="KWE-6m-YEe"/>
+                            <constraint firstItem="3Yu-bW-fBI" firstAttribute="bottom" secondItem="k5S-8D-nVj" secondAttribute="bottom" constant="-34" id="Ezy-u0-iJR"/>
+                            <constraint firstItem="TQj-EO-xfS" firstAttribute="height" secondItem="LNv-N7-BJy" secondAttribute="height" multiplier="0.972222" constant="1.1111111111111143" id="JbB-nG-dqh"/>
+                            <constraint firstItem="3Yu-bW-fBI" firstAttribute="bottom" secondItem="AUb-d5-lB2" secondAttribute="bottom" constant="-34" id="LIE-aY-BBt"/>
                             <constraint firstItem="UFw-5D-6r1" firstAttribute="trailing" secondItem="hWm-bx-7tS" secondAttribute="trailingMargin" id="QOt-9X-8MB"/>
-                            <constraint firstItem="gYz-Di-c4P" firstAttribute="top" secondItem="gXe-SP-50D" secondAttribute="bottom" constant="8" id="Uxa-Q4-QXK"/>
-                            <constraint firstItem="gXe-SP-50D" firstAttribute="trailing" secondItem="UFw-5D-6r1" secondAttribute="trailing" id="bDx-k2-bbZ"/>
-                            <constraint firstItem="UFw-5D-6r1" firstAttribute="top" secondItem="5hx-XL-Msq" secondAttribute="bottom" constant="24" id="cDN-cm-xXX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AUb-d5-lB2" secondAttribute="trailing" constant="-16" id="SNf-o1-Lq7"/>
+                            <constraint firstItem="AUb-d5-lB2" firstAttribute="leading" secondItem="hWm-bx-7tS" secondAttribute="leadingMargin" constant="-16" id="XS2-3v-ruu"/>
+                            <constraint firstItem="UFw-5D-6r1" firstAttribute="top" secondItem="3Yu-bW-fBI" secondAttribute="top" constant="55" id="cDN-cm-xXX"/>
+                            <constraint firstItem="rkf-xQ-buE" firstAttribute="trailing" secondItem="UFw-5D-6r1" secondAttribute="trailing" id="fk9-R0-wvB"/>
+                            <constraint firstItem="TQj-EO-xfS" firstAttribute="bottom" secondItem="LNv-N7-BJy" secondAttribute="bottom" id="pAz-W5-ZnA"/>
+                            <constraint firstItem="AUb-d5-lB2" firstAttribute="top" secondItem="UFw-5D-6r1" secondAttribute="bottom" constant="8" id="qnZ-H8-I14"/>
+                            <constraint firstItem="TQj-EO-xfS" firstAttribute="centerY" secondItem="rkf-xQ-buE" secondAttribute="centerY" constant="2" id="s5T-46-0U7"/>
+                            <constraint firstItem="rkf-xQ-buE" firstAttribute="top" secondItem="hWm-bx-7tS" secondAttribute="topMargin" id="sNO-C4-4oz"/>
+                            <constraint firstItem="TQj-EO-xfS" firstAttribute="leading" secondItem="UFw-5D-6r1" secondAttribute="leading" constant="2" id="tAU-1j-EbX"/>
                             <constraint firstItem="k5S-8D-nVj" firstAttribute="leading" secondItem="hWm-bx-7tS" secondAttribute="leadingMargin" constant="-16" id="vKp-Ai-x9o"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OBP-JV-djX"/>
                     <connections>
-                        <outlet property="inhaltview" destination="gXe-SP-50D" id="QBl-oP-bXJ"/>
+                        <outlet property="backBtn" destination="TQj-EO-xfS" id="Fx5-e7-TY4"/>
+                        <outlet property="forwardBtn" destination="LNv-N7-BJy" id="H8S-Za-EkJ"/>
+                        <outlet property="searchBar" destination="rkf-xQ-buE" id="539-vw-cWX"/>
+                        <outlet property="webView" destination="AUb-d5-lB2" id="rt4-Cm-XpX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOK-Uh-DGS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -545,10 +527,6 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="UBE-CJ-L8d">
             <objects>
                 <viewController id="xXs-wQ-dIw" customClass="NotesAddenVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8Cv-Ne-s8X"/>
-                        <viewControllerLayoutGuide type="bottom" id="jVa-CN-4ha"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qlY-Gc-usw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,7 +535,7 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ceE-dn-ETa">
-                                <rect key="frame" x="0.0" y="62" width="375" height="617"/>
+                                <rect key="frame" x="0.0" y="109" width="375" height="604"/>
                                 <color key="backgroundColor" white="1" alpha="0.59393108443708609" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
@@ -573,7 +551,7 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rAO-Vp-3nf">
-                                <rect key="frame" x="16" y="20" width="343" height="34"/>
+                                <rect key="frame" x="16" y="67" width="343" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -586,21 +564,22 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 </constraints>
                             </colorWell>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Chk-Ie-b9w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ceE-dn-ETa" firstAttribute="top" secondItem="rAO-Vp-3nf" secondAttribute="bottom" constant="8" symbolic="YES" id="6mK-eL-PJB"/>
                             <constraint firstItem="rAO-Vp-3nf" firstAttribute="leading" secondItem="qlY-Gc-usw" secondAttribute="leadingMargin" id="LXE-LA-HFo"/>
                             <constraint firstAttribute="bottom" secondItem="VSw-8p-Rm8" secondAttribute="bottom" id="NfQ-tF-nTd"/>
                             <constraint firstAttribute="bottomMargin" secondItem="06c-sT-j8T" secondAttribute="bottom" constant="78" id="P0U-vZ-H2X"/>
-                            <constraint firstItem="VSw-8p-Rm8" firstAttribute="leading" secondItem="qlY-Gc-usw" secondAttribute="leading" id="Plj-Yd-UZV"/>
+                            <constraint firstItem="VSw-8p-Rm8" firstAttribute="leading" secondItem="Chk-Ie-b9w" secondAttribute="leading" id="Plj-Yd-UZV"/>
                             <constraint firstItem="VSw-8p-Rm8" firstAttribute="top" secondItem="qlY-Gc-usw" secondAttribute="top" id="cYL-mk-hLN"/>
-                            <constraint firstItem="ceE-dn-ETa" firstAttribute="leading" secondItem="qlY-Gc-usw" secondAttribute="leading" id="eKd-5M-Ech"/>
-                            <constraint firstItem="rAO-Vp-3nf" firstAttribute="top" secondItem="8Cv-Ne-s8X" secondAttribute="bottom" constant="20" id="fiC-uI-tdd"/>
+                            <constraint firstItem="ceE-dn-ETa" firstAttribute="leading" secondItem="Chk-Ie-b9w" secondAttribute="leading" id="eKd-5M-Ech"/>
+                            <constraint firstItem="rAO-Vp-3nf" firstAttribute="top" secondItem="Chk-Ie-b9w" secondAttribute="top" constant="20" id="fiC-uI-tdd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="06c-sT-j8T" secondAttribute="trailing" constant="18" id="fiv-hM-LA3"/>
-                            <constraint firstItem="jVa-CN-4ha" firstAttribute="top" secondItem="ceE-dn-ETa" secondAttribute="bottom" constant="42" id="jV0-gf-u6T"/>
+                            <constraint firstItem="Chk-Ie-b9w" firstAttribute="bottom" secondItem="ceE-dn-ETa" secondAttribute="bottom" constant="42" id="jV0-gf-u6T"/>
                             <constraint firstAttribute="bottomMargin" secondItem="L97-ha-SSo" secondAttribute="bottom" constant="75" id="ket-6L-mje"/>
-                            <constraint firstAttribute="trailing" secondItem="VSw-8p-Rm8" secondAttribute="trailing" id="n0a-R1-cTb"/>
-                            <constraint firstAttribute="trailing" secondItem="ceE-dn-ETa" secondAttribute="trailing" id="rDq-Le-eh3"/>
+                            <constraint firstItem="Chk-Ie-b9w" firstAttribute="trailing" secondItem="VSw-8p-Rm8" secondAttribute="trailing" id="n0a-R1-cTb"/>
+                            <constraint firstItem="Chk-Ie-b9w" firstAttribute="trailing" secondItem="ceE-dn-ETa" secondAttribute="trailing" id="rDq-Le-eh3"/>
                             <constraint firstItem="06c-sT-j8T" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="L97-ha-SSo" secondAttribute="trailing" constant="8" symbolic="YES" id="sWn-2b-buY"/>
                             <constraint firstItem="L97-ha-SSo" firstAttribute="leading" secondItem="qlY-Gc-usw" secondAttribute="leadingMargin" constant="13" id="t7H-de-COx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rAO-Vp-3nf" secondAttribute="trailing" id="xSA-a6-Off"/>
@@ -620,10 +599,6 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="CJh-0a-7Pq">
             <objects>
                 <viewController id="7Ik-Ss-gJW" customClass="UserImageView" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Wuk-QB-yXG"/>
-                        <viewControllerLayoutGuide type="bottom" id="Dvn-YM-cPN"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nfa-JU-H1M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -665,18 +640,19 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="x69-GE-DZG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="72t-d4-dfw" firstAttribute="top" secondItem="Kny-eC-1p4" secondAttribute="bottom" constant="135" id="4Bu-B6-Qzw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="72t-d4-dfw" secondAttribute="trailing" constant="46" id="Box-9P-CKV"/>
                             <constraint firstItem="vNj-hv-5sK" firstAttribute="leading" secondItem="nfa-JU-H1M" secondAttribute="leadingMargin" constant="46" id="Emg-mw-s34"/>
-                            <constraint firstItem="Kny-eC-1p4" firstAttribute="top" secondItem="Wuk-QB-yXG" secondAttribute="bottom" constant="39" id="FNR-Jo-OuV"/>
+                            <constraint firstItem="Kny-eC-1p4" firstAttribute="top" secondItem="x69-GE-DZG" secondAttribute="top" constant="39" id="FNR-Jo-OuV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vNj-hv-5sK" secondAttribute="trailing" constant="46" id="Iwf-Q2-N6K"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Kny-eC-1p4" secondAttribute="trailing" constant="46" id="LtT-aQ-EM1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bxc-Zg-7U6" secondAttribute="trailing" constant="31" id="SiX-Q5-KoY"/>
                             <constraint firstItem="Kny-eC-1p4" firstAttribute="leading" secondItem="nfa-JU-H1M" secondAttribute="leadingMargin" constant="46" id="fDj-Fa-197"/>
                             <constraint firstItem="72t-d4-dfw" firstAttribute="top" secondItem="Bxc-Zg-7U6" secondAttribute="bottom" constant="116" id="heY-sK-MVU"/>
-                            <constraint firstItem="Bxc-Zg-7U6" firstAttribute="top" secondItem="Wuk-QB-yXG" secondAttribute="bottom" constant="191" id="jiw-Eu-440"/>
+                            <constraint firstItem="Bxc-Zg-7U6" firstAttribute="top" secondItem="x69-GE-DZG" secondAttribute="top" constant="191" id="jiw-Eu-440"/>
                             <constraint firstItem="72t-d4-dfw" firstAttribute="leading" secondItem="nfa-JU-H1M" secondAttribute="leadingMargin" constant="46" id="rKD-kY-Gku"/>
                             <constraint firstItem="vNj-hv-5sK" firstAttribute="top" secondItem="72t-d4-dfw" secondAttribute="bottom" constant="112" id="xKQ-ln-pX7"/>
                         </constraints>
@@ -698,16 +674,12 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="mak-NL-CeM">
             <objects>
                 <viewController id="mTm-18-Pvb" customClass="NotizyCollectionVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wX4-M0-Ows"/>
-                        <viewControllerLayoutGuide type="bottom" id="ujb-4Z-T7F"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oXM-l7-cZd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2gI-hS-79R">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="721"/>
+                                <rect key="frame" x="0.0" y="47" width="375" height="708"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pe5-RJ-8rw">
                                     <size key="itemSize" width="128" height="128"/>
@@ -716,7 +688,7 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotizyBackground" id="x3a-Mc-4KM">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="721"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="708"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <cells>
@@ -762,12 +734,13 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 </cells>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="qGN-fJ-TDm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2gI-hS-79R" firstAttribute="leading" secondItem="oXM-l7-cZd" secondAttribute="leading" id="4Qr-Is-QhB"/>
-                            <constraint firstAttribute="trailing" secondItem="2gI-hS-79R" secondAttribute="trailing" id="Cpc-iu-dw9"/>
-                            <constraint firstItem="2gI-hS-79R" firstAttribute="top" secondItem="wX4-M0-Ows" secondAttribute="bottom" id="U6J-O8-xzj"/>
-                            <constraint firstItem="ujb-4Z-T7F" firstAttribute="top" secondItem="2gI-hS-79R" secondAttribute="bottom" id="roD-DO-Mi3"/>
+                            <constraint firstItem="2gI-hS-79R" firstAttribute="leading" secondItem="qGN-fJ-TDm" secondAttribute="leading" id="4Qr-Is-QhB"/>
+                            <constraint firstItem="qGN-fJ-TDm" firstAttribute="trailing" secondItem="2gI-hS-79R" secondAttribute="trailing" id="Cpc-iu-dw9"/>
+                            <constraint firstItem="2gI-hS-79R" firstAttribute="top" secondItem="qGN-fJ-TDm" secondAttribute="top" id="U6J-O8-xzj"/>
+                            <constraint firstItem="qGN-fJ-TDm" firstAttribute="bottom" secondItem="2gI-hS-79R" secondAttribute="bottom" id="roD-DO-Mi3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iMQ-zT-vOU">
@@ -790,10 +763,6 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="sQo-GN-ubk">
             <objects>
                 <viewController id="SnY-FY-rUx" customClass="ModernCellNotizyVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vcB-aU-s4b"/>
-                        <viewControllerLayoutGuide type="bottom" id="zQa-kx-13M"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kWc-0B-J0D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -802,12 +771,13 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="t5Q-9r-JYt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="VyC-gN-Ab8" secondAttribute="trailing" id="HG4-tu-EMM"/>
+                            <constraint firstItem="t5Q-9r-JYt" firstAttribute="trailing" secondItem="VyC-gN-Ab8" secondAttribute="trailing" id="HG4-tu-EMM"/>
                             <constraint firstItem="VyC-gN-Ab8" firstAttribute="top" secondItem="kWc-0B-J0D" secondAttribute="top" id="OAy-yn-ICU"/>
                             <constraint firstAttribute="bottom" secondItem="VyC-gN-Ab8" secondAttribute="bottom" id="UPn-BM-A48"/>
-                            <constraint firstItem="VyC-gN-Ab8" firstAttribute="leading" secondItem="kWc-0B-J0D" secondAttribute="leading" id="qqF-ij-G5p"/>
+                            <constraint firstItem="VyC-gN-Ab8" firstAttribute="leading" secondItem="t5Q-9r-JYt" secondAttribute="leading" id="qqF-ij-G5p"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eRu-P1-HZF">
@@ -826,10 +796,6 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="HqR-eD-4ry">
             <objects>
                 <viewController id="qlX-pi-qDR" customClass="CollectionViewTaskVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2Y7-o7-ccu"/>
-                        <viewControllerLayoutGuide type="bottom" id="DdH-3h-1Oe"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="L29-UX-HcE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -839,6 +805,7 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z51-Za-JeJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="cvS-8y-Z8Z"/>
@@ -914,10 +881,6 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="15t-Wr-J1A">
             <objects>
                 <viewController id="Etb-f4-9lU" customClass="EditVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="R5g-hj-otn"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qfd-XF-JWw"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cDn-nE-55N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1036,10 +999,11 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sog-3r-IZ1"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="TxU-Nq-vR4" firstAttribute="top" secondItem="R5g-hj-otn" secondAttribute="bottom" constant="15" id="3MG-j9-wPo"/>
-                            <constraint firstItem="TxU-Nq-vR4" firstAttribute="top" secondItem="R5g-hj-otn" secondAttribute="bottom" constant="15" id="BiI-mQ-MzG"/>
+                            <constraint firstItem="TxU-Nq-vR4" firstAttribute="top" secondItem="Sog-3r-IZ1" secondAttribute="top" constant="15" id="3MG-j9-wPo"/>
+                            <constraint firstItem="TxU-Nq-vR4" firstAttribute="top" secondItem="Sog-3r-IZ1" secondAttribute="top" constant="15" id="BiI-mQ-MzG"/>
                             <constraint firstItem="m5d-wS-BaR" firstAttribute="top" secondItem="Lpz-tF-B1D" secondAttribute="bottom" constant="29" id="EyM-VN-IBY"/>
                             <constraint firstItem="SxV-PY-GEh" firstAttribute="leading" secondItem="cDn-nE-55N" secondAttribute="leadingMargin" constant="31" id="FKj-hR-evo"/>
                             <constraint firstItem="340-rt-t24" firstAttribute="top" secondItem="WwD-EK-rbT" secondAttribute="bottom" constant="32" id="FpG-Lz-Dem"/>
@@ -1049,16 +1013,16 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                             <constraint firstItem="2KN-lq-iuX" firstAttribute="top" secondItem="SxV-PY-GEh" secondAttribute="bottom" constant="49" id="LIK-c5-5lL"/>
                             <constraint firstItem="au1-EX-fHg" firstAttribute="top" secondItem="g90-Kg-J4u" secondAttribute="bottom" constant="46" id="LYT-0H-hia"/>
                             <constraint firstItem="Q7h-6J-nw4" firstAttribute="top" secondItem="egG-sJ-S74" secondAttribute="bottom" constant="23" id="MNI-my-gNX"/>
-                            <constraint firstItem="Q7h-6J-nw4" firstAttribute="centerX" secondItem="cDn-nE-55N" secondAttribute="centerX" id="QzI-Ro-3AG"/>
+                            <constraint firstItem="Q7h-6J-nw4" firstAttribute="centerX" secondItem="Sog-3r-IZ1" secondAttribute="centerX" id="QzI-Ro-3AG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WwD-EK-rbT" secondAttribute="trailing" constant="13" id="WNL-Ef-wBY"/>
-                            <constraint firstItem="egG-sJ-S74" firstAttribute="centerX" secondItem="cDn-nE-55N" secondAttribute="centerX" id="XQ0-Hk-iU4"/>
-                            <constraint firstItem="Lpz-tF-B1D" firstAttribute="top" secondItem="R5g-hj-otn" secondAttribute="bottom" constant="121" id="bj5-wf-HmJ"/>
+                            <constraint firstItem="egG-sJ-S74" firstAttribute="centerX" secondItem="Sog-3r-IZ1" secondAttribute="centerX" id="XQ0-Hk-iU4"/>
+                            <constraint firstItem="Lpz-tF-B1D" firstAttribute="top" secondItem="Sog-3r-IZ1" secondAttribute="top" constant="121" id="bj5-wf-HmJ"/>
                             <constraint firstItem="au1-EX-fHg" firstAttribute="leading" secondItem="cDn-nE-55N" secondAttribute="leadingMargin" constant="31" id="eWk-Hk-xjc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="340-rt-t24" secondAttribute="trailing" constant="13" id="egi-h8-wyK"/>
                             <constraint firstItem="SxV-PY-GEh" firstAttribute="top" secondItem="au1-EX-fHg" secondAttribute="bottom" constant="44" id="jHv-KB-7oO"/>
                             <constraint firstItem="WwD-EK-rbT" firstAttribute="top" secondItem="m5d-wS-BaR" secondAttribute="bottom" constant="34" id="jT6-mY-amP"/>
                             <constraint firstItem="g90-Kg-J4u" firstAttribute="leading" secondItem="cDn-nE-55N" secondAttribute="leadingMargin" constant="31" id="k1r-zJ-zIq"/>
-                            <constraint firstItem="TxU-Nq-vR4" firstAttribute="centerX" secondItem="cDn-nE-55N" secondAttribute="centerX" id="kt2-6K-ltN"/>
+                            <constraint firstItem="TxU-Nq-vR4" firstAttribute="centerX" secondItem="Sog-3r-IZ1" secondAttribute="centerX" id="kt2-6K-ltN"/>
                             <constraint firstItem="egG-sJ-S74" firstAttribute="top" secondItem="2KN-lq-iuX" secondAttribute="bottom" constant="8" id="raI-pk-zGN"/>
                             <constraint firstItem="Q7h-6J-nw4" firstAttribute="leading" secondItem="cDn-nE-55N" secondAttribute="leadingMargin" constant="7" id="rgJ-ga-5Pq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Q7h-6J-nw4" secondAttribute="trailing" constant="7" id="ttN-mK-EDE"/>
@@ -1094,10 +1058,6 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="3Pm-SQ-EGL">
             <objects>
                 <viewController id="dIe-9k-T8L" customClass="LoginVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zML-uT-cxn"/>
-                        <viewControllerLayoutGuide type="bottom" id="uFG-ld-EEl"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ac8-Uh-OOj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1139,18 +1099,19 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="NoB-1k-tnb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DWh-8P-F1J" firstAttribute="top" secondItem="XAJ-3q-h8z" secondAttribute="bottom" constant="35" id="1xN-nX-8vh"/>
-                            <constraint firstItem="0jK-Ff-0gS" firstAttribute="leading" secondItem="ac8-Uh-OOj" secondAttribute="leading" id="6pr-pG-esR"/>
+                            <constraint firstItem="0jK-Ff-0gS" firstAttribute="leading" secondItem="NoB-1k-tnb" secondAttribute="leading" id="6pr-pG-esR"/>
                             <constraint firstItem="Uf6-En-fmE" firstAttribute="top" secondItem="qLe-Bj-Xwf" secondAttribute="bottom" constant="71" id="74m-zY-Nih"/>
                             <constraint firstItem="XAJ-3q-h8z" firstAttribute="top" secondItem="Hfy-3T-CRP" secondAttribute="bottom" constant="61" id="DVH-U5-jrA"/>
                             <constraint firstItem="qLe-Bj-Xwf" firstAttribute="leading" secondItem="ac8-Uh-OOj" secondAttribute="leadingMargin" constant="43" id="EvU-ge-5GV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DWh-8P-F1J" secondAttribute="trailing" constant="44" id="FBw-AQ-0BC"/>
-                            <constraint firstItem="qLe-Bj-Xwf" firstAttribute="centerX" secondItem="ac8-Uh-OOj" secondAttribute="centerX" id="IxF-bj-KmW"/>
+                            <constraint firstItem="qLe-Bj-Xwf" firstAttribute="centerX" secondItem="NoB-1k-tnb" secondAttribute="centerX" id="IxF-bj-KmW"/>
                             <constraint firstAttribute="bottom" secondItem="qLe-Bj-Xwf" secondAttribute="bottom" constant="276" id="NzM-Cf-PcI"/>
-                            <constraint firstAttribute="trailing" secondItem="Hfy-3T-CRP" secondAttribute="trailing" constant="154" id="VtG-Nr-lyF"/>
-                            <constraint firstItem="Hfy-3T-CRP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ac8-Uh-OOj" secondAttribute="leading" constant="20" symbolic="YES" id="dzC-ed-HlT"/>
+                            <constraint firstItem="NoB-1k-tnb" firstAttribute="trailing" secondItem="Hfy-3T-CRP" secondAttribute="trailing" constant="154" id="VtG-Nr-lyF"/>
+                            <constraint firstItem="Hfy-3T-CRP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NoB-1k-tnb" secondAttribute="leading" constant="20" symbolic="YES" id="dzC-ed-HlT"/>
                             <constraint firstItem="qLe-Bj-Xwf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XAJ-3q-h8z" secondAttribute="leading" id="iWe-0L-kgi"/>
                             <constraint firstItem="Hfy-3T-CRP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ac8-Uh-OOj" secondAttribute="leadingMargin" id="jFn-CG-sB8"/>
                             <constraint firstItem="qLe-Bj-Xwf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DWh-8P-F1J" secondAttribute="leading" id="kcc-Sv-jcw"/>
@@ -1177,10 +1138,6 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="1yn-r1-wcT">
             <objects>
                 <viewController id="q0B-d1-bbr" customClass="SignUpVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="npl-lF-oMI"/>
-                        <viewControllerLayoutGuide type="bottom" id="WCf-aH-A0H"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pPo-Rc-dIi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1189,22 +1146,22 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 <rect key="frame" x="0.0" y="-91" width="375" height="895"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fQ1-9v-N7e">
-                                <rect key="frame" x="35" y="167" width="305" height="34"/>
+                                <rect key="frame" x="35" y="214" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GoB-Wu-mjo">
-                                <rect key="frame" x="35" y="302" width="305" height="34"/>
+                                <rect key="frame" x="35" y="349" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort bestätigen..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPr-4H-hPS">
-                                <rect key="frame" x="35" y="371" width="305" height="34"/>
+                                <rect key="frame" x="35" y="418" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sv8-Gh-UQ8">
-                                <rect key="frame" x="35" y="479" width="305" height="35"/>
+                                <rect key="frame" x="35" y="526" width="305" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Anmelden"/>
                                 <connections>
@@ -1213,7 +1170,7 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGZ-wh-xgO">
-                                <rect key="frame" x="35" y="595" width="305" height="35"/>
+                                <rect key="frame" x="35" y="642" width="305" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Schon registriert? Zum Login"/>
                                 <connections>
@@ -1221,20 +1178,21 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hier registrieren" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEj-0J-kdA">
-                                <rect key="frame" x="110.66666666666667" y="82" width="153.66666666666663" height="24"/>
+                                <rect key="frame" x="110.66666666666667" y="129" width="153.66666666666663" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZET-UI-nEI">
-                                <rect key="frame" x="35" y="234" width="305" height="34"/>
+                                <rect key="frame" x="35" y="281" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Il0-ax-CDY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="KEj-0J-kdA" firstAttribute="centerX" secondItem="pPo-Rc-dIi" secondAttribute="centerX" id="0MD-kf-nPO"/>
+                            <constraint firstItem="KEj-0J-kdA" firstAttribute="centerX" secondItem="Il0-ax-CDY" secondAttribute="centerX" id="0MD-kf-nPO"/>
                             <constraint firstItem="RHD-yg-LdH" firstAttribute="top" secondItem="pPo-Rc-dIi" secondAttribute="topMargin" constant="-91" id="4IK-Nb-fwr"/>
                             <constraint firstItem="wGZ-wh-xgO" firstAttribute="top" secondItem="sv8-Gh-UQ8" secondAttribute="bottom" constant="81" id="5FJ-Mi-rfr"/>
                             <constraint firstItem="fQ1-9v-N7e" firstAttribute="leading" secondItem="ZET-UI-nEI" secondAttribute="leading" id="856-jM-oRC"/>
@@ -1243,7 +1201,7 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                             <constraint firstItem="GoB-Wu-mjo" firstAttribute="trailing" secondItem="JPr-4H-hPS" secondAttribute="trailing" id="APB-I6-eyX"/>
                             <constraint firstItem="JPr-4H-hPS" firstAttribute="trailing" secondItem="sv8-Gh-UQ8" secondAttribute="trailing" id="DwT-EZ-vzz"/>
                             <constraint firstItem="KEj-0J-kdA" firstAttribute="leading" secondItem="pPo-Rc-dIi" secondAttribute="leadingMargin" constant="94.666666666666686" id="IN6-NF-b7h"/>
-                            <constraint firstItem="KEj-0J-kdA" firstAttribute="top" secondItem="npl-lF-oMI" secondAttribute="bottom" constant="82" id="KBx-qC-8LX"/>
+                            <constraint firstItem="KEj-0J-kdA" firstAttribute="top" secondItem="Il0-ax-CDY" secondAttribute="top" constant="82" id="KBx-qC-8LX"/>
                             <constraint firstItem="ZET-UI-nEI" firstAttribute="leading" secondItem="GoB-Wu-mjo" secondAttribute="leading" id="Mey-uH-b80"/>
                             <constraint firstItem="fQ1-9v-N7e" firstAttribute="trailing" secondItem="ZET-UI-nEI" secondAttribute="trailing" id="Q8n-fo-yWx"/>
                             <constraint firstItem="RHD-yg-LdH" firstAttribute="leading" secondItem="pPo-Rc-dIi" secondAttribute="leadingMargin" constant="-16" id="Rdt-fq-Uej"/>
@@ -1299,10 +1257,6 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="b2V-sf-Upg">
             <objects>
                 <viewController id="8HS-Kd-Zor" customClass="NotizyVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ytb-dw-LjX"/>
-                        <viewControllerLayoutGuide type="bottom" id="3T0-i4-G4W"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WbK-Y8-ZBd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1312,12 +1266,13 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="zoa-dM-Jef"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3T0-i4-G4W" firstAttribute="top" secondItem="rJG-77-feF" secondAttribute="bottom" id="Chu-0v-j2Q"/>
-                            <constraint firstAttribute="trailing" secondItem="rJG-77-feF" secondAttribute="trailing" id="VIH-Ln-zkJ"/>
-                            <constraint firstItem="rJG-77-feF" firstAttribute="top" secondItem="ytb-dw-LjX" secondAttribute="bottom" id="aur-7m-p5K"/>
-                            <constraint firstItem="rJG-77-feF" firstAttribute="leading" secondItem="WbK-Y8-ZBd" secondAttribute="leading" id="ptb-GK-AO0"/>
+                            <constraint firstItem="zoa-dM-Jef" firstAttribute="bottom" secondItem="rJG-77-feF" secondAttribute="bottom" id="Chu-0v-j2Q"/>
+                            <constraint firstItem="zoa-dM-Jef" firstAttribute="trailing" secondItem="rJG-77-feF" secondAttribute="trailing" id="VIH-Ln-zkJ"/>
+                            <constraint firstItem="rJG-77-feF" firstAttribute="top" secondItem="zoa-dM-Jef" secondAttribute="top" id="aur-7m-p5K"/>
+                            <constraint firstItem="rJG-77-feF" firstAttribute="leading" secondItem="zoa-dM-Jef" secondAttribute="leading" id="ptb-GK-AO0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pk2-xA-mVs">
@@ -1336,13 +1291,10 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="JSg-Az-nwv">
             <objects>
                 <viewController id="9dE-NO-hOE" customClass="NotizyVC" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jFX-bk-x0I"/>
-                        <viewControllerLayoutGuide type="bottom" id="6FN-d7-IWb"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NQP-sr-RiF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="v2h-lH-OXp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ssw-3y-lQB"/>
@@ -1354,7 +1306,7 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <!--Scans-->
         <scene sceneID="rqQ-Hq-C4q">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="W5V-nR-hIv" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W5V-nR-hIv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Scans" image="scanner.fill" catalog="system" id="U9t-wd-www"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="OnS-u7-1Oc"/>
@@ -1364,11 +1316,10 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QJM-7P-lsp">
-                        <rect key="frame" x="0.0" y="680" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="wyn-sG-88e" kind="relationship" relationship="rootViewController" id="L6p-XU-kr7"/>
+                        <segue destination="lVa-Yx-Zec" kind="relationship" relationship="rootViewController" id="VBZ-4H-3iH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPq-pE-2Mr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1379,19 +1330,15 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="wpq-Zw-UHa">
             <objects>
                 <viewController id="wyn-sG-88e" customClass="NotizyCardView" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tYw-Uc-zGb"/>
-                        <viewControllerLayoutGuide type="bottom" id="kG0-tc-s5E"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="x08-Kj-tnv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bildschirmfoto 2022-08-19 um 10.46.36" translatesAutoresizingMaskIntoConstraints="NO" id="DEi-YF-9iv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="l7W-8h-fuv">
-                                <rect key="frame" x="0.0" y="245" width="375" height="378"/>
+                                <rect key="frame" x="0.0" y="188" width="375" height="378"/>
                                 <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="378" id="YcK-un-Uag"/>
@@ -1432,14 +1379,14 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 </cells>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Auf-Vc-a7A">
-                                <rect key="frame" x="123" y="99" width="144" height="138"/>
+                                <rect key="frame" x="123" y="55" width="144" height="138"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="144" id="IHr-Lc-3eS"/>
                                     <constraint firstAttribute="height" constant="138" id="wUJ-Gl-Lp2"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbx-2u-IgK">
-                                <rect key="frame" x="72" y="658" width="92.333333333333314" height="35"/>
+                                <rect key="frame" x="72" y="601" width="92.333333333333314" height="35"/>
                                 <color key="backgroundColor" red="0.3947068453" green="1" blue="0.40024748440000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="scanner" catalog="system" title="Scan"/>
@@ -1447,32 +1394,35 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                     <action selector="touchUpInsideCameraButton:" destination="wyn-sG-88e" eventType="touchUpInside" id="hcF-Gv-Fee"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjJ-sn-pv9">
-                                <rect key="frame" x="211" y="658" width="133.33333333333337" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAV-dX-GKc">
+                                <rect key="frame" x="196" y="601" width="123" height="35"/>
                                 <color key="backgroundColor" red="0.3947068453" green="1" blue="0.40024748440000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="scanner" catalog="system" title="Document"/>
+                                <buttonConfiguration key="configuration" style="filled" title="PDF Scanner">
+                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                    <color key="baseBackgroundColor" red="0.3947068453" green="1" blue="0.40024748440000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ruq-kW-k2u" kind="show" identifier="dokument" id="2jg-mV-5Ak"/>
+                                    <segue destination="lVa-Yx-Zec" kind="show" id="RlD-e2-y6Q"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="JJP-XH-gcR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Auf-Vc-a7A" firstAttribute="leading" secondItem="x08-Kj-tnv" secondAttribute="leading" constant="123" id="1FS-c5-8UB"/>
-                            <constraint firstItem="KjJ-sn-pv9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lbx-2u-IgK" secondAttribute="trailing" constant="8" symbolic="YES" id="4gv-Fl-o1I"/>
-                            <constraint firstItem="DEi-YF-9iv" firstAttribute="trailing" secondItem="x08-Kj-tnv" secondAttribute="trailing" id="5Lj-PA-6ms"/>
-                            <constraint firstItem="lbx-2u-IgK" firstAttribute="centerX" secondItem="x08-Kj-tnv" secondAttribute="centerX" constant="-69.333333333333329" id="Ft7-Q7-PZJ"/>
-                            <constraint firstAttribute="trailing" secondItem="l7W-8h-fuv" secondAttribute="trailing" id="IqC-gh-RIx"/>
+                            <constraint firstItem="Auf-Vc-a7A" firstAttribute="leading" secondItem="JJP-XH-gcR" secondAttribute="leading" constant="123" id="1FS-c5-8UB"/>
+                            <constraint firstItem="AAV-dX-GKc" firstAttribute="leading" secondItem="lbx-2u-IgK" secondAttribute="trailing" constant="31.666666666666686" id="2B3-SE-3lj"/>
+                            <constraint firstItem="DEi-YF-9iv" firstAttribute="trailing" secondItem="JJP-XH-gcR" secondAttribute="trailing" id="5Lj-PA-6ms"/>
+                            <constraint firstItem="AAV-dX-GKc" firstAttribute="top" secondItem="lbx-2u-IgK" secondAttribute="top" id="AXM-IS-hkc"/>
+                            <constraint firstItem="lbx-2u-IgK" firstAttribute="centerX" secondItem="JJP-XH-gcR" secondAttribute="centerX" constant="-69.333333333333329" id="Ft7-Q7-PZJ"/>
+                            <constraint firstItem="JJP-XH-gcR" firstAttribute="trailing" secondItem="l7W-8h-fuv" secondAttribute="trailing" id="IqC-gh-RIx"/>
                             <constraint firstAttribute="bottom" secondItem="DEi-YF-9iv" secondAttribute="bottom" id="K5o-Kl-FXi"/>
-                            <constraint firstItem="l7W-8h-fuv" firstAttribute="leading" secondItem="x08-Kj-tnv" secondAttribute="leading" id="RGx-WN-r51"/>
+                            <constraint firstItem="l7W-8h-fuv" firstAttribute="leading" secondItem="JJP-XH-gcR" secondAttribute="leading" id="RGx-WN-r51"/>
                             <constraint firstItem="DEi-YF-9iv" firstAttribute="top" secondItem="x08-Kj-tnv" secondAttribute="top" id="SfA-Uv-lJo"/>
-                            <constraint firstItem="KjJ-sn-pv9" firstAttribute="baseline" secondItem="lbx-2u-IgK" secondAttribute="baseline" id="a5s-vf-wKy"/>
                             <constraint firstItem="lbx-2u-IgK" firstAttribute="top" secondItem="l7W-8h-fuv" secondAttribute="bottom" constant="35" id="tU1-t5-H8M"/>
                             <constraint firstItem="Auf-Vc-a7A" firstAttribute="top" secondItem="x08-Kj-tnv" secondAttribute="topMargin" constant="8" id="wH3-6D-zLG"/>
-                            <constraint firstAttribute="trailing" secondItem="KjJ-sn-pv9" secondAttribute="trailing" constant="30.666666666666629" id="xWc-P4-kqG"/>
                             <constraint firstAttribute="bottom" secondItem="lbx-2u-IgK" secondAttribute="bottom" constant="119" id="xu3-ov-Uzf"/>
-                            <constraint firstItem="DEi-YF-9iv" firstAttribute="leading" secondItem="x08-Kj-tnv" secondAttribute="leading" id="yTb-XX-RLt"/>
+                            <constraint firstItem="DEi-YF-9iv" firstAttribute="leading" secondItem="JJP-XH-gcR" secondAttribute="leading" id="yTb-XX-RLt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1VZ-5p-sY4">
@@ -1486,17 +1436,83 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tP-76-Heq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="-2633"/>
+            <point key="canvasLocation" x="927" y="-3149"/>
         </scene>
         <!--Scanner View Controller-->
-        <scene sceneID="Gon-eE-vOm">
+        <scene sceneID="3hD-hv-rb5">
             <objects>
-                <viewController id="Ruq-kW-k2u" customClass="ScannerViewController" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="ich-eM-6EH"/>
+                <viewController id="lVa-Yx-Zec" customClass="ScannerViewController" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ggi-Aq-C6w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotizyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="88M-DB-eFX">
+                                <rect key="frame" x="0.0" y="-47" width="375" height="849"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJe-8y-MIF">
+                                <rect key="frame" x="0.0" y="12" width="375" height="56"/>
+                                <items>
+                                    <navigationItem id="Kcc-EC-N1v">
+                                        <barButtonItem key="leftBarButtonItem" image="scanner.fill" catalog="system" id="7ff-vm-heZ">
+                                            <connections>
+                                                <action selector="TakeAgainButton:" destination="lVa-Yx-Zec" id="V3T-wB-9Ed"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="PDF Speichern" id="F5A-3w-R64">
+                                                <connections>
+                                                    <action selector="savePDFButton:" destination="lVa-Yx-Zec" id="9db-O7-jSe"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Item" image="qrcode" catalog="system" id="Oc3-ua-Z0e">
+                                                <connections>
+                                                    <segue destination="8WP-30-jf5" kind="show" id="auP-A1-7fj"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Item" image="photo" catalog="system" id="RC2-4X-Dhh">
+                                                <connections>
+                                                    <action selector="galerieBTN:" destination="lVa-Yx-Zec" id="cvr-gR-84k"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                                <navigationBarAppearance key="compactAppearance">
+                                    <textAttributes key="titleTextAttributes"/>
+                                </navigationBarAppearance>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lmI-Vg-kh8">
+                                <rect key="frame" x="16" y="83" width="343" height="596"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="596" id="91s-cN-pyW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vkk-JD-356"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vkk-JD-356" firstAttribute="bottom" secondItem="lmI-Vg-kh8" secondAttribute="bottom" constant="27" id="0jz-6K-PaL"/>
+                            <constraint firstItem="88M-DB-eFX" firstAttribute="centerY" secondItem="ggi-Aq-C6w" secondAttribute="centerY" id="D2k-0Y-Jo3"/>
+                            <constraint firstItem="lmI-Vg-kh8" firstAttribute="leading" secondItem="ggi-Aq-C6w" secondAttribute="leadingMargin" id="FMw-pv-gaT"/>
+                            <constraint firstItem="88M-DB-eFX" firstAttribute="top" secondItem="ggi-Aq-C6w" secondAttribute="topMargin" constant="-47" id="Ig4-fg-Xzp"/>
+                            <constraint firstItem="lmI-Vg-kh8" firstAttribute="top" secondItem="JJe-8y-MIF" secondAttribute="bottom" constant="15" id="Iol-eP-Zbg"/>
+                            <constraint firstItem="88M-DB-eFX" firstAttribute="leading" secondItem="JJe-8y-MIF" secondAttribute="leading" id="JHv-T3-9MC"/>
+                            <constraint firstItem="88M-DB-eFX" firstAttribute="leading" secondItem="ggi-Aq-C6w" secondAttribute="leadingMargin" constant="-16" id="LYm-v0-iu0"/>
+                            <constraint firstItem="lmI-Vg-kh8" firstAttribute="trailing" secondItem="ggi-Aq-C6w" secondAttribute="trailingMargin" id="bNS-RW-G6K"/>
+                            <constraint firstItem="lmI-Vg-kh8" firstAttribute="centerX" secondItem="JJe-8y-MIF" secondAttribute="centerX" id="gwd-22-2xs"/>
+                            <constraint firstItem="lmI-Vg-kh8" firstAttribute="centerX" secondItem="88M-DB-eFX" secondAttribute="centerX" id="sD8-MI-lsE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rL8-Js-n8Z"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="vorschauDoc" destination="lmI-Vg-kh8" id="DNa-qy-Lbu"/>
+                        <segue destination="ktY-1e-ic0" kind="presentation" identifier="verDocumento" id="4oc-F5-gW2"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u8t-13-Gpb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRc-bD-SbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1832.8" y="-2633.497536945813"/>
+            <point key="canvasLocation" x="1821.5999999999999" y="-2633.497536945813"/>
         </scene>
         <!--Login-->
         <scene sceneID="xUZ-Bb-X2e">
@@ -1545,13 +1561,13 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8rV-YS-SlK"/>
                         <constraints>
-                            <constraint firstItem="zr0-TD-3zr" firstAttribute="centerX" secondItem="rbV-8E-21l" secondAttribute="centerX" id="8nz-Av-I8a"/>
+                            <constraint firstItem="zr0-TD-3zr" firstAttribute="centerX" secondItem="8rV-YS-SlK" secondAttribute="centerX" id="8nz-Av-I8a"/>
                             <constraint firstItem="9R9-97-7PU" firstAttribute="top" secondItem="rbV-8E-21l" secondAttribute="top" constant="121" id="9Bf-aO-epH"/>
                             <constraint firstItem="8rV-YS-SlK" firstAttribute="trailing" secondItem="9R9-97-7PU" secondAttribute="trailing" id="Q99-4k-HQs"/>
                             <constraint firstItem="Szw-VG-KP6" firstAttribute="centerY" secondItem="rbV-8E-21l" secondAttribute="centerY" id="WG5-UE-Ytc"/>
                             <constraint firstItem="9R9-97-7PU" firstAttribute="leading" secondItem="8rV-YS-SlK" secondAttribute="leading" id="aoj-B8-kw8"/>
                             <constraint firstItem="zr0-TD-3zr" firstAttribute="centerY" secondItem="rbV-8E-21l" secondAttribute="centerY" constant="-100" id="cip-O1-9Ts"/>
-                            <constraint firstItem="Szw-VG-KP6" firstAttribute="centerX" secondItem="rbV-8E-21l" secondAttribute="centerX" id="d6p-57-Lf3"/>
+                            <constraint firstItem="Szw-VG-KP6" firstAttribute="centerX" secondItem="8rV-YS-SlK" secondAttribute="centerX" id="d6p-57-Lf3"/>
                             <constraint firstItem="8rV-YS-SlK" firstAttribute="bottom" secondItem="9R9-97-7PU" secondAttribute="bottom" constant="101" id="yN8-X0-hUb"/>
                         </constraints>
                     </view>
@@ -1578,16 +1594,12 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <scene sceneID="nhW-jy-Ge6">
             <objects>
                 <viewController id="ifb-rr-Lbk" customClass="DetailCollectionView" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7A0-73-J3l"/>
-                        <viewControllerLayoutGuide type="bottom" id="hNb-XM-mvD"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="M3G-KI-wy2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notizy.img" translatesAutoresizingMaskIntoConstraints="NO" id="diN-GK-Ic9">
-                                <rect key="frame" x="0.0" y="26" width="375" height="673"/>
+                                <rect key="frame" x="0.0" y="73" width="375" height="660"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6m-eQ-a36">
                                 <rect key="frame" x="33" y="148" width="53" height="24"/>
@@ -1600,25 +1612,26 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LV9-CT-qQR">
-                                <rect key="frame" x="0.0" y="180" width="375" height="519"/>
+                                <rect key="frame" x="0.0" y="180" width="375" height="553"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="j0V-iu-dFs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LV9-CT-qQR" firstAttribute="bottom" secondItem="diN-GK-Ic9" secondAttribute="bottom" id="2Tn-Vr-wBw"/>
                             <constraint firstItem="O6m-eQ-a36" firstAttribute="leading" secondItem="M3G-KI-wy2" secondAttribute="leadingMargin" constant="17" id="7rR-8z-SDI"/>
                             <constraint firstItem="O6m-eQ-a36" firstAttribute="top" secondItem="M3G-KI-wy2" secondAttribute="topMargin" constant="101" id="8p6-xe-f44"/>
                             <constraint firstItem="LV9-CT-qQR" firstAttribute="trailing" secondItem="diN-GK-Ic9" secondAttribute="trailing" id="LJx-PI-A3U"/>
-                            <constraint firstAttribute="trailing" secondItem="diN-GK-Ic9" secondAttribute="trailing" id="N8C-Ya-Ct6"/>
-                            <constraint firstItem="diN-GK-Ic9" firstAttribute="leading" secondItem="M3G-KI-wy2" secondAttribute="leading" id="NAQ-TI-RX2"/>
-                            <constraint firstItem="diN-GK-Ic9" firstAttribute="top" secondItem="7A0-73-J3l" secondAttribute="bottom" constant="26" id="Vah-QG-3gU"/>
+                            <constraint firstItem="j0V-iu-dFs" firstAttribute="trailing" secondItem="diN-GK-Ic9" secondAttribute="trailing" id="N8C-Ya-Ct6"/>
+                            <constraint firstItem="diN-GK-Ic9" firstAttribute="leading" secondItem="j0V-iu-dFs" secondAttribute="leading" id="NAQ-TI-RX2"/>
+                            <constraint firstItem="diN-GK-Ic9" firstAttribute="top" secondItem="j0V-iu-dFs" secondAttribute="top" constant="26" id="Vah-QG-3gU"/>
                             <constraint firstItem="LV9-CT-qQR" firstAttribute="top" secondItem="O6m-eQ-a36" secondAttribute="bottom" constant="8" id="sII-RU-CEu"/>
                             <constraint firstItem="LV9-CT-qQR" firstAttribute="leading" secondItem="diN-GK-Ic9" secondAttribute="leading" id="tJ7-ZR-D68"/>
-                            <constraint firstItem="hNb-XM-mvD" firstAttribute="top" secondItem="diN-GK-Ic9" secondAttribute="bottom" constant="22" id="ygU-xf-4X1"/>
+                            <constraint firstItem="j0V-iu-dFs" firstAttribute="bottom" secondItem="diN-GK-Ic9" secondAttribute="bottom" constant="22" id="ygU-xf-4X1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xH7-8b-Zn7"/>
@@ -1631,10 +1644,93 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
             </objects>
             <point key="canvasLocation" x="1305" y="337"/>
         </scene>
+        <!--Ver Documento View Controller-->
+        <scene sceneID="nby-SD-52j">
+            <objects>
+                <viewController id="ktY-1e-ic0" customClass="VerDocumentoViewController" customModule="PDFScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7rL-AH-U7c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Vp-iZ-2ay">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OfL-7n-6KI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Vp-iZ-2ay" firstAttribute="leading" secondItem="OfL-7n-6KI" secondAttribute="leading" id="HNy-rb-Zbu"/>
+                            <constraint firstItem="2Vp-iZ-2ay" firstAttribute="top" secondItem="7rL-AH-U7c" secondAttribute="top" id="NwM-3I-tKi"/>
+                            <constraint firstItem="2Vp-iZ-2ay" firstAttribute="trailing" secondItem="OfL-7n-6KI" secondAttribute="trailing" id="Sr9-7A-56G"/>
+                            <constraint firstItem="2Vp-iZ-2ay" firstAttribute="bottom" secondItem="OfL-7n-6KI" secondAttribute="bottom" id="W91-Jl-a03"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0a5-Ca-Xty"/>
+                    <connections>
+                        <outlet property="documentoVisualizar" destination="2Vp-iZ-2ay" id="i1F-cu-eH2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Trl-Wl-aO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2729" y="-2156"/>
+        </scene>
+        <!--Generar Código QR-->
+        <scene sceneID="743-GA-kyy">
+            <objects>
+                <viewController id="8WP-30-jf5" customClass="QRViewController" customModule="PDFScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mIl-WH-kur">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Geben Sie hier den Text ein, den Sie in QR umwandeln möchten." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xzh-Rt-NC5">
+                                <rect key="frame" x="15" y="62" width="345" height="164"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="Y1c-f3-lxs"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="31H-hE-cTt">
+                                <rect key="frame" x="70" y="237.66666666666663" width="235" height="197"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7aB-PF-uaE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iox-Z8-M84"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="31H-hE-cTt" firstAttribute="leading" secondItem="iox-Z8-M84" secondAttribute="leading" constant="70" id="0L6-f6-wsh"/>
+                            <constraint firstItem="31H-hE-cTt" firstAttribute="top" secondItem="Xzh-Rt-NC5" secondAttribute="bottom" constant="10" id="1or-tg-LpM"/>
+                            <constraint firstItem="Xzh-Rt-NC5" firstAttribute="top" secondItem="iox-Z8-M84" secondAttribute="top" constant="15" id="aWA-Uf-SfQ"/>
+                            <constraint firstItem="iox-Z8-M84" firstAttribute="trailing" secondItem="Xzh-Rt-NC5" secondAttribute="trailing" constant="15" id="baj-M4-L1t"/>
+                            <constraint firstItem="iox-Z8-M84" firstAttribute="trailing" secondItem="31H-hE-cTt" secondAttribute="trailing" constant="70" id="h4r-iv-y9p"/>
+                            <constraint firstItem="Xzh-Rt-NC5" firstAttribute="leading" secondItem="iox-Z8-M84" secondAttribute="leading" constant="15" id="xlH-cQ-qdV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Generar Código QR" id="oQS-gY-oM7">
+                        <barButtonItem key="rightBarButtonItem" title="Generar" id="k1e-W9-lbn">
+                            <connections>
+                                <action selector="generarButton:" destination="8WP-30-jf5" id="6Kz-DB-KWM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imagenQRVisualizar" destination="31H-hE-cTt" id="6EK-Jj-0LY"/>
+                        <outlet property="textoGenerar" destination="Xzh-Rt-NC5" id="vE3-kv-pHp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SUI-eJ-3rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2780" y="-2873"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0hj-tp-IA6"/>
-        <segue reference="4Gr-sW-n0j"/>
+        <segue reference="RlD-e2-y6Q"/>
+        <segue reference="oAi-wC-rn6"/>
         <segue reference="eFi-kN-939"/>
         <segue reference="1mr-m1-kgT"/>
         <segue reference="DCR-Qb-lKd"/>
@@ -1648,7 +1744,7 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <image name="Notizy" width="1952" height="2920"/>
         <image name="NotizyBackground" width="1440" height="2408"/>
         <image name="applelogo" catalog="system" width="105" height="128"/>
-        <image name="arrow.up.forward.app" catalog="system" width="128" height="114"/>
+        <image name="arrowshape.backward" catalog="system" width="128" height="104"/>
         <image name="arrowshape.right" catalog="system" width="128" height="104"/>
         <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
         <image name="background" width="227" height="340"/>
@@ -1656,6 +1752,7 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="chevron.right.2" catalog="system" width="128" height="108"/>
         <image name="defaultImage" width="1524" height="976"/>
+        <image name="envelope.arrow.triangle.branch" catalog="system" width="128" height="120"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="greetingcard" catalog="system" width="108" height="128"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
@@ -1663,6 +1760,8 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="note.text" catalog="system" width="128" height="107"/>
         <image name="notizy.img" width="238" height="402"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="qrcode" catalog="system" width="128" height="114"/>
         <image name="scanner" catalog="system" width="128" height="93"/>
         <image name="scanner.fill" catalog="system" width="128" height="93"/>
         <image name="super-pencil-icon." width="2000" height="2000"/>

@@ -11,7 +11,7 @@ import FirebaseAuth
 import FirebaseStorage
 import FirebaseFirestore
 
-class TableNotizyVC: UIViewController {
+class NotizyHomeVC: UIViewController {
     
     @IBOutlet weak var homeView: UIView!
     
@@ -97,7 +97,7 @@ class TableNotizyVC: UIViewController {
     
 }
 
-extension TableNotizyVC:VNDocumentCameraViewControllerDelegate{
+extension NotizyHomeVC:VNDocumentCameraViewControllerDelegate{
     
     func documentCameraViewController(_ controller:VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan){
         
