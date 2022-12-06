@@ -71,7 +71,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BuJ-BN-hVb">
-                                <rect key="frame" x="-11" y="0.0" width="378" height="44"/>
+                                <rect key="frame" x="-12" y="0.0" width="379" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="x8V-N1-BM0">
@@ -224,7 +224,7 @@
                                             <color key="baseBackgroundColor" red="0.52941185239999999" green="0.52941185239999999" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="dIe-9k-T8L" kind="show" id="eFi-kN-939"/>
+                                            <segue destination="dIe-9k-T8L" kind="show" identifier="loginSuccessful" id="eFi-kN-939"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CA-tA-lS5">
@@ -449,7 +449,7 @@
                                 <rect key="frame" x="0.0" y="-47" width="375" height="802"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXe-SP-50D">
-                                <rect key="frame" x="16" y="56" width="343" height="332"/>
+                                <rect key="frame" x="16" y="56" width="343" height="657"/>
                                 <color key="backgroundColor" red="0.63914536978259229" green="0.63914536978259229" blue="0.63914536978259229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Inhalt">
@@ -459,13 +459,52 @@
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">
-Notizen dienen dazu, einen Sachverhalt schnell und in Kurzform schriftlich festzuhalten, bevor seine Einzelheiten vom Verfasser vergessen werden. Der Text besitzt mehr Beweiskraft als die bloße Erinnerung. Die Aufzeichnungen dienen deshalb nicht nur dem eigenen Gebrauch, sondern auch als Beweismittel.
-
-Eine Notiz dient auch der Erinnerung an zu erledigende Aufgaben oder Termine, oder hilft, umfangreiche Informationen in kurzer Form festzuhalten. Besonders geeignet für Notizen ist die Stenografie wegen ihrer Kompaktheit und Schnelligkeit (Kurznotiz). Diktiergeräte können auch dazu verwendet werden, um Notizen mündlich festzuhalten.</string>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
                                         <attributes>
                                             <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">Notizen dienen dazu, einen Sachverhalt schnell und in Kurzform schriftlich festzuhalten, bevor seine Einzelheiten vom Verfasser vergessen werden. Der Text besitzt mehr Beweiskraft als die bloße Erinnerung. Die Aufzeichnungen dienen deshalb nicht nur dem eigenen Gebrauch, sondern auch als Beweismittel.
+
+Eine Notiz dient auch der Erinnerung an zu erledigende Aufgaben oder Termine, oder hilft, umfangreiche Informationen in kurzer Form festzuhalten. Besonders geeignet für Notizen ist die Stenografie wegen ihrer Kompaktheit und Schnelligkeit (Kurznotiz). Diktiergeräte können auch dazu verwendet werden, um Notizen mündlich festzuhalten. </mutableString>
+                                        <attributes>
+                                            <color key="NSColor" red="0.228662163" green="0.2118475735" blue="0.9637251496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="                           ">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Allgemeines">
+                                        <attributes>
+                                            <color key="NSColor" red="0.015871227418199168" green="0.059287177977785731" blue="0.063506155303030276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.015871227418199168" green="0.059287177977785731" blue="0.063506155303030276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">„Notiz von etwas nehmen“ heißt Erkundigungen über einen Sachverhalt einholen.[2] In Kabale und Liebe von Friedrich Schiller (1784) sagt der Stadtmusikant Miller: „Hab‘ ihm’s Mädel nicht nachgeworfen; wer nimmt Notiz davon?“.[3] August von Platen-Hallermünde schrieb 1848: „Ich habe genialische Notizen von Zeit zu Zeit mir angefertiget“.[4] Die Gebrüder Grimm vermerkten 1889 in ihrem Deutschen Wörterbuch, dass ursprünglich mit „Notiz“ die Kenntnis oder Nachricht bezeichnet wurde.[5]
+
+Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. Sein philosophisch-literarisches Hauptwerk Die Notizen umfasst viele hundert notizenhafte Einträge, die immer wieder dieselben Themen umkreisen.</mutableString>
+                                        <attributes>
+                                            <color key="NSColor" red="0.18336686490000001" green="0.16723963620000001" blue="0.99642759560000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -477,52 +516,24 @@ Eine Notiz dient auch der Erinnerung an zu erledigende Aufgaben oder Termine, od
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-RH-jz3">
-                                <rect key="frame" x="16" y="396" width="343" height="333"/>
-                                <color key="backgroundColor" red="0.63921570780000003" green="0.63921570780000003" blue="0.63921570780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Allgemeines">
-                                        <attributes>
-                                            <color key="NSColor" systemColor="labelColor"/>
-                                            <font key="NSFont" metaFont="system" size="18"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-„Notiz von etwas nehmen“ heißt Erkundigungen über einen Sachverhalt einholen.[2] In Kabale und Liebe von Friedrich Schiller (1784) sagt der Stadtmusikant Miller: „Hab‘ ihm’s Mädel nicht nachgeworfen; wer nimmt Notiz davon?“.[3] August von Platen-Hallermünde schrieb 1848: „Ich habe genialische Notizen von Zeit zu Zeit mir angefertiget“.[4] Die Gebrüder Grimm vermerkten 1889 in ihrem Deutschen Wörterbuch, dass ursprünglich mit „Notiz“ die Kenntnis oder Nachricht bezeichnet wurde.[5]
-
-Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. Sein philosophisch-literarisches Hauptwerk Die Notizen umfasst viele hundert notizenhafte Einträge, die immer wieder dieselben Themen umkreisen.</string>
-                                        <attributes>
-                                            <color key="NSColor" systemColor="labelColor"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="k5S-8D-nVj" firstAttribute="top" secondItem="5hx-XL-Msq" secondAttribute="bottom" constant="-47" id="0tM-oR-CN2"/>
-                            <constraint firstItem="2cz-RH-jz3" firstAttribute="trailing" secondItem="gXe-SP-50D" secondAttribute="trailing" id="1QO-LR-KSN"/>
-                            <constraint firstItem="2cz-RH-jz3" firstAttribute="top" secondItem="gXe-SP-50D" secondAttribute="bottom" constant="8" id="2LT-7e-wFQ"/>
                             <constraint firstItem="UFw-5D-6r1" firstAttribute="leading" secondItem="hWm-bx-7tS" secondAttribute="leadingMargin" id="9zN-Cn-U9d"/>
                             <constraint firstAttribute="trailingMargin" secondItem="k5S-8D-nVj" secondAttribute="trailing" constant="-16" id="Abz-I2-eDk"/>
                             <constraint firstItem="gXe-SP-50D" firstAttribute="leading" secondItem="UFw-5D-6r1" secondAttribute="leading" id="DGr-8P-wLz"/>
                             <constraint firstItem="gYz-Di-c4P" firstAttribute="top" secondItem="k5S-8D-nVj" secondAttribute="bottom" constant="-34" id="Ezy-u0-iJR"/>
                             <constraint firstItem="gXe-SP-50D" firstAttribute="top" secondItem="UFw-5D-6r1" secondAttribute="bottom" constant="8" id="KWE-6m-YEe"/>
                             <constraint firstItem="UFw-5D-6r1" firstAttribute="trailing" secondItem="hWm-bx-7tS" secondAttribute="trailingMargin" id="QOt-9X-8MB"/>
-                            <constraint firstItem="gYz-Di-c4P" firstAttribute="top" secondItem="gXe-SP-50D" secondAttribute="bottom" constant="333" id="Uxa-Q4-QXK"/>
+                            <constraint firstItem="gYz-Di-c4P" firstAttribute="top" secondItem="gXe-SP-50D" secondAttribute="bottom" constant="8" id="Uxa-Q4-QXK"/>
                             <constraint firstItem="gXe-SP-50D" firstAttribute="trailing" secondItem="UFw-5D-6r1" secondAttribute="trailing" id="bDx-k2-bbZ"/>
                             <constraint firstItem="UFw-5D-6r1" firstAttribute="top" secondItem="5hx-XL-Msq" secondAttribute="bottom" constant="24" id="cDN-cm-xXX"/>
-                            <constraint firstItem="2cz-RH-jz3" firstAttribute="leading" secondItem="gXe-SP-50D" secondAttribute="leading" id="nHR-T8-kOd"/>
                             <constraint firstItem="k5S-8D-nVj" firstAttribute="leading" secondItem="hWm-bx-7tS" secondAttribute="leadingMargin" constant="-16" id="vKp-Ai-x9o"/>
-                            <constraint firstItem="gYz-Di-c4P" firstAttribute="top" secondItem="2cz-RH-jz3" secondAttribute="bottom" constant="-8" id="wbj-VJ-4V5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OBP-JV-djX"/>
                     <connections>
-                        <outlet property="allgemeinesview" destination="2cz-RH-jz3" id="8Ve-Pk-Y0z"/>
                         <outlet property="inhaltview" destination="gXe-SP-50D" id="QBl-oP-bXJ"/>
                     </connections>
                 </viewController>
@@ -1116,7 +1127,7 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
                                     <action selector="logging:" destination="dIe-9k-T8L" eventType="touchUpInside" id="2BP-9a-D6r"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="loginSuccessful" id="4GF-He-Ocl"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="backtohome" id="4GF-He-Ocl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf6-En-fmE">
@@ -1480,7 +1491,9 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         <!--Scanner View Controller-->
         <scene sceneID="Gon-eE-vOm">
             <objects>
-                <viewController id="Ruq-kW-k2u" customClass="ScannerViewController" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="Ruq-kW-k2u" customClass="ScannerViewController" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ich-eM-6EH"/>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u8t-13-Gpb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1832.8" y="-2633.497536945813"/>
@@ -1620,13 +1633,13 @@ Der Autor Ludwig Hohl erhob die „Notiz“ zu einer eigenen Literaturgattung. S
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2jg-mV-5Ak"/>
-        <segue reference="oAi-wC-rn6"/>
-        <segue reference="fVk-DB-Hge"/>
+        <segue reference="0hj-tp-IA6"/>
+        <segue reference="4Gr-sW-n0j"/>
+        <segue reference="eFi-kN-939"/>
         <segue reference="1mr-m1-kgT"/>
         <segue reference="DCR-Qb-lKd"/>
         <segue reference="Ki1-Ti-VJt"/>
-        <segue reference="h9M-U0-N7R"/>
+        <segue reference="4GF-He-Ocl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Bildschirmfoto 2022-08-19 um 10.46.36" width="1074" height="1162"/>

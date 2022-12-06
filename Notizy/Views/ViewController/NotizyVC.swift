@@ -82,23 +82,27 @@ class NotizyVC: UIViewController {
     }
     
     private func setUpModels() {
-        models.append(.collectionView(models: [CollectionTableCellModel(title: "car1", imageName: "car1"),
+        models.append(.collectionView(models: [CollectionTableCellModel(title: "Notizen in stein", imageName: "notizen in stein"),
                                                
-                                               CollectionTableCellModel(title: "car2", imageName: "car2"),
-                                               CollectionTableCellModel(title: "car3", imageName: "car3"),
-                                               CollectionTableCellModel(title: "car4", imageName: "car4"),
-                                               CollectionTableCellModel(title: "car5", imageName: "car5"),
-                                               CollectionTableCellModel(title: "car6", imageName: "car6"),
-                                               CollectionTableCellModel(title: "car7", imageName: "car7"),
-                                               
+                                               CollectionTableCellModel(title: "Notizen in stein ", imageName: "notizen in stein 2"),
+                                               CollectionTableCellModel(title: "Notizen in stein ", imageName: "notizen in stein 4"),
+                                               CollectionTableCellModel(title: "Klassiker", imageName: "klassiker"),
+                                               CollectionTableCellModel(title: "Klassische Notizen", imageName: "klassische notizen"),
+                                               CollectionTableCellModel(title: "Klassische Notizen", imageName: "klassische notizen 1"),
+                                               CollectionTableCellModel(title: "Klassische Notizen", imageName: "klassische notizen 2"),
+                                               CollectionTableCellModel(title: "Zukunft der Notizen", imageName: "zukunft der notizen"),
+                                               CollectionTableCellModel(title: "Zukunft der", imageName: "zukunft der notizen 1"),
+                                               CollectionTableCellModel(title: "Zukunft der", imageName: "zukunft der notizen 2"),
+                                               CollectionTableCellModel(title: "Zukunft der", imageName: "zukunft der notizen 3"),
+                                               CollectionTableCellModel(title: "Gegenwärtige Notizen", imageName: "gegenwart"),
                                               ], rows: 2))
         
         models.append(.list(models: [
-            ListCellModel(title: "First Thing"),
-            ListCellModel(title: "Second Thing"),
-            ListCellModel(title: "Another Thing"),
-            ListCellModel(title: "Other Thing"),
-            ListCellModel(title: "More Thing"),
+            ListCellModel(title: "Notizen in Stein"),
+            ListCellModel(title: "Klassiker"),
+            ListCellModel(title: "Klassische Notizen"),
+            ListCellModel(title: "Zukunft der Notizen"),
+            ListCellModel(title: "Gegenwart"),
         
         ]))
     }

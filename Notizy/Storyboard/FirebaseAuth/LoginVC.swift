@@ -89,14 +89,14 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { (success, error) in
                 if success {
                     DispatchQueue.main.async { [unowned self] in
-                        self.showMessage(title: "Login Successful", message: nil)
+//                        self.showMessage(title: "Login Successful", message: nil)
                         
                         tabBarItem.title = "Account"
                         tabBarController?.tabBar.items![4].title = "Account"
                         tabBarController?.tabBar.items![4].image =
                         UIImage(systemName: "brain.head.profile")
 
-                      performSegue(withIdentifier: "loginSuccessful", sender: self )
+                      performSegue(withIdentifier: "backtohome", sender: self )
                     }
                 } else {
                     DispatchQueue.main.async { [unowned self] in

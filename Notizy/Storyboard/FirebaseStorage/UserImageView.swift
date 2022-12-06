@@ -105,6 +105,8 @@ class UserImageView: UIViewController, UITextViewDelegate, UITextFieldDelegate, 
         
         guard (imgView.image?.jpegData(compressionQuality: 1.0)) != nil else { return }
         
+//     
+        
        
         
 //                 File Path festlegen

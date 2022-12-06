@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     let settings = UserSettings()
     @IBOutlet weak var label: UILabel!
     
+    
+//    Colorwell damit kann man seine Hintergrundfarbe aussuchen
+    
     let colorWell: UIColorWell = {
         let colorWell = UIColorWell()
         colorWell.supportsAlpha = true
