@@ -11,21 +11,6 @@ import AVFoundation
 
 class NotizyVC: UIViewController {
     
-
-    
-    @IBAction func donehauptseite(_ sender: Any) {
-        if let tabbar = (self.storyboard!.instantiateViewController(withIdentifier: "homeTabBar") as? UITabBarController
-            ) {
-              self.present(tabbar, animated: true, completion: nil)
-            }else{
-              print("Something went wrong")
-            }
-        
-        
-    }
-    
-   
-    
     private let table: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -38,12 +23,16 @@ class NotizyVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         
-        setUpModels()
+        
+        ApiService().getImages { results in
+            
+            self.setUpModels(result: results)
+        }
+        
         view.addSubview(table)
         
-//        TODO: - tableHeaderView
+        //        TODO: - tableHeaderView
         table.tableHeaderView = createTableHeader()
         
         table.delegate = self
@@ -51,50 +40,67 @@ class NotizyVC: UIViewController {
         
     }
     
-   
     
-//    MARK: - Video im Header einbetten
+    
+    //    MARK: - Video im Header einbetten
     
     private func createTableHeader() -> UIView? {
         guard let path = Bundle.main.path(forResource: "skizzen",
                                           ofType: "mp4") else {
             return nil
         }
-
+        
         let url = URL(fileURLWithPath: path)
-
+        
         let player = AVPlayer(url: url)
         player.volume = 0
-
+        
         let headerView = UIView(frame:CGRect(x: 0,
                                              y: 0,
                                              width: view.frame.size.width,
                                              height: 180))
-
+        
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = headerView.bounds
         headerView.layer.addSublayer(playerLayer)
-
+        
         playerLayer.videoGravity = .resizeAspectFill
         player.play()
-
+        
+        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: nil, queue: nil) {_ in
+            player.seek(to: CMTime.zero)
+            player.play()
+        }
+        
         return headerView
     }
     
-    private func setUpModels() {
-        models.append(.collectionView(models: [CollectionTableCellModel(title: "Notizen in stein", imageName: "notizen in stein"),
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: nil)
+    }
+    
+    
+    
+    
+    
+    private func setUpModels(result:ApiStart) {
+        models.append(.collectionView(models: [CollectionTableCellModel(title: result[14].name, imageName: "notizen in stein"),
                                                
-                                               CollectionTableCellModel(title: "Notizen in stein ", imageName: "notizen in stein 2"),
-                                               CollectionTableCellModel(title: "Notizen in stein ", imageName: "notizen in stein 4"),
-                                               CollectionTableCellModel(title: "Klassiker", imageName: "klassiker"),
-                                               CollectionTableCellModel(title: "Klassische Notizen", imageName: "klassische notizen"),
-                                               CollectionTableCellModel(title: "Klassische Notizen", imageName: "klassische notizen 1"),
-                                               CollectionTableCellModel(title: "Klassische Notizen", imageName: "klassische notizen 2"),
-                                               CollectionTableCellModel(title: "Zukunft der Notizen", imageName: "zukunft der notizen"),
-                                               CollectionTableCellModel(title: "Zukunft der", imageName: "zukunft der notizen 1"),
-                                               CollectionTableCellModel(title: "Zukunft der", imageName: "zukunft der notizen 2"),
-                                               CollectionTableCellModel(title: "Zukunft der", imageName: "zukunft der notizen 3"),
-                                               CollectionTableCellModel(title: "Gegenwärtige Notizen", imageName: "gegenwart"),
+                                               CollectionTableCellModel(title: result[13].name, imageName: "notizen in stein 2"),
+                                               CollectionTableCellModel(title: result[12].name, imageName: "notizen in stein 4"),
+                                               CollectionTableCellModel(title: result[11].name, imageName: "klassiker"),
+                                               CollectionTableCellModel(title: result[10].name, imageName: "klassische notizen"),
+                                               CollectionTableCellModel(title: result[9].name, imageName: "klassische notizen 1"),
+                                               CollectionTableCellModel(title: result[8].name, imageName: "klassische notizen 2"),
+                                               CollectionTableCellModel(title: result[7].name, imageName: "zukunft der notizen"),
+                                               CollectionTableCellModel(title: result[6].name, imageName: "zukunft der notizen 1"),
+                                               CollectionTableCellModel(title: result[5].name, imageName: "zukunft der notizen 2"),
+                                               CollectionTableCellModel(title: result[4].name, imageName: "zukunft der notizen 3"),
+                                               CollectionTableCellModel(title: result[3].name, imageName: "gegenwart"),
+                                               CollectionTableCellModel(title: result[2].name, imageName: "gegenwart"),
+                                               CollectionTableCellModel(title: result[1].name, imageName: "gegenwart"),
+                                               CollectionTableCellModel(title: result[0].name, imageName: "gegenwart"),
+                                              
                                               ], rows: 2))
         
         models.append(.list(models: [
@@ -103,7 +109,7 @@ class NotizyVC: UIViewController {
             ListCellModel(title: "Klassische Notizen"),
             ListCellModel(title: "Zukunft der Notizen"),
             ListCellModel(title: "Gegenwart"),
-        
+            
         ]))
     }
     
@@ -144,7 +150,7 @@ extension NotizyVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         
-      
+        
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

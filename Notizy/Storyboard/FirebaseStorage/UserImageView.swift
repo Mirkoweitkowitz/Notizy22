@@ -105,14 +105,6 @@ class UserImageView: UIViewController, UITextViewDelegate, UITextFieldDelegate, 
         
         guard (imgView.image?.jpegData(compressionQuality: 1.0)) != nil else { return }
         
-        //
-        
-        
-        
-        //                 File Path festlegen
-        //
-        
-        //        let path = "images/\(nameThisImgTF.text!).png"
         
         if let user = Auth.auth().currentUser{
             let path = "userimages/\(user.uid).png"
@@ -138,15 +130,5 @@ class UserImageView: UIViewController, UITextViewDelegate, UITextFieldDelegate, 
         }
         NotificationCenter.default.post(name: NSNotification.Name.init("de.Notizy.UserImageView.userImage"), object: imageData)
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     Get the new view controller using segue.destination.
-     Pass the selected object to the new view controller.
-     }
-     */
     
 }

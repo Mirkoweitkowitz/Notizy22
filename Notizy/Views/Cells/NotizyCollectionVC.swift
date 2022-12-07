@@ -24,7 +24,23 @@ class NotizyCollectionVC: UIViewController, UICollectionViewDelegate,UICollectio
     // Referenz zum Core Data Persistent Store / managedObjectContext
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    
+    lazy var fetchresultcontroller: NSFetchedResultsController<Notiz> =  {
+        let request: NSFetchRequest<Notiz> = Notiz.fetchRequest()
+        request.sortDescriptors = [ NSSortDescriptor(key: "title", ascending: true)
+        ]
+        let controller = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        
+        
+        do {
+            try controller.performFetch()
+        }catch {
+            print("etwas ist schief gegangen")
+        }
+        
+        return controller
+        
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,23 +50,7 @@ class NotizyCollectionVC: UIViewController, UICollectionViewDelegate,UICollectio
         //        backgroundColor einstellen
         
         collView?.backgroundColor = .clear
-        
-        //        MARK: test Code ausgeführt
-//                for note in 1...25 {
-//                    var newNote = Notiz(context: context)
-//                    newNote.title = "note:\(note)"
-//                    newNote.text = "Test"
-//                    newNote.color = getRandomColor()
-//               }
-//
-//                //Saving Data
-//                do {
-//                   try context.save()
-//                } catch {
-//                    print("Error by saving request")
-//                }
-        
-    
+       fetchresultcontroller.delegate = self
         
         let gesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture(_:)))
         
@@ -181,7 +181,17 @@ class NotizyCollectionVC: UIViewController, UICollectionViewDelegate,UICollectio
         
     }
     
-  
+}
+
+
+extension NotizyCollectionVC: NSFetchedResultsControllerDelegate {
     
     
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        list = fetchresultcontroller.sections![
+            0].objects! as? [Notiz]
+        collView.reloadData()
+        print("controllerDidChangeContent")
+
+    }
 }

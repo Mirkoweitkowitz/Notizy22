@@ -77,7 +77,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
     }
     
-//    MARK: - Face ID zur anmeldung eingebunden
+    //    MARK: - Face ID zur anmeldung eingebunden
     
     func faceId (){
         let context = LAContext()
@@ -92,8 +92,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { (success, error) in
                 if success {
                     DispatchQueue.main.async { [unowned self] in
-                       
-//                        MARK: BarItem sichbar gemacht & ein gesicht gegeben
+                        
+                        //                        MARK: BarItem sichbar gemacht & ein gesicht gegeben
                         tabBarItem.title = "Account"
                         tabBarController?.tabBar.items![4].title = "Account"
                         tabBarController?.tabBar.items![4].image =

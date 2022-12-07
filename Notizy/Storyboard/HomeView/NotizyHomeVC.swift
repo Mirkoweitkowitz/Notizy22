@@ -29,21 +29,21 @@ class NotizyHomeVC: UIViewController {
         homeView.layer.shadowOffset = .zero
         homeView.layer.shadowOpacity = 0.5
         homeView.layer.shadowRadius = 20
-       
         
-//        HomeImage einstellung
+        
+        //        HomeImage einstellung
         
         imageHome.layer.cornerRadius = 15
         imageHome.layer.borderWidth = 3
         imageHome.layer.borderColor = UIColor.green.cgColor
-
-       
+        
+        
         notes.layer.shadowColor = UIColor.green.cgColor
         notes.layer.shadowOffset = .zero
         notes.layer.shadowOpacity = 0.5
         notes.layer.shadowRadius = 20
         notes.imageView?.layer.cornerRadius = 30
-       
+        
         NotificationCenter.default.addObserver(self, selector: #selector(newImageUser(_ :)), name: NSNotification.Name.init("de.Notizy.UserImageView.userImage"), object: nil)
     }
     
@@ -53,22 +53,22 @@ class NotizyHomeVC: UIViewController {
             
             
             ref.getData(maxSize: 1 * 5000 * 5000) { result in
-              switch result {
-              case let .success(data):
-                  print("#" + data.description)
-                  DispatchQueue.main.async {
-                      self.imageHome.image = UIImage(data: data)
-                  }
-                 
-              case let .failure(error):
-                print("Error: Image could not download! \(error)")
-              }
+                switch result {
+                case let .success(data):
+                    print("#" + data.description)
+                    DispatchQueue.main.async {
+                        self.imageHome.image = UIImage(data: data)
+                    }
+                    
+                case let .failure(error):
+                    print("Error: Image could not download! \(error)")
+                }
             }
         }
         
     }
     
-//    MARK: Um den Speicher zu entlasten
+    //    MARK: Um den Speicher zu entlasten
     deinit {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.init("de.Notizy.UserImageView.userImage"), object: nil)
     }
@@ -123,17 +123,17 @@ extension NotizyHomeVC:VNDocumentCameraViewControllerDelegate{
             
             // Daten hochladen
             _ = fileRef.putData(imageData) { metadata, error in
-                            if error == nil {
-                                print("test dragon")
-
+                if error == nil {
+                    print("test dragon")
+                    
                     let db = Firestore.firestore()
                     db.collection("images").document().setData([
                         "url": path
-                    
+                        
                     ])
-                            }else {
-                                print(error!)
-                            }
+                }else {
+                    print(error!)
+                }
                 
             }
         }
