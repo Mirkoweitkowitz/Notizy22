@@ -72,6 +72,7 @@
 		40DF07AD28EC82B00043224A /* TableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DF07AC28EC82B00043224A /* TableCollectionViewCell.swift */; };
 		40DF1F8A293A2DCF0071C23C /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DF1F89293A2DCF0071C23C /* ScannerViewController.swift */; };
 		40E1184F292F6FA00056EE46 /* MyColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E1184E292F6FA00056EE46 /* MyColorPicker.swift */; };
+		40F3B52F29423286001CDEDF /* NotizyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F3B52E29423286001CDEDF /* NotizyView.swift */; };
 		40F4BB91291EAA6200965E1B /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 40F4BB90291EAA6200965E1B /* PopupView */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +130,7 @@
 		40DF07AC28EC82B00043224A /* TableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCollectionViewCell.swift; sourceTree = "<group>"; };
 		40DF1F89293A2DCF0071C23C /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		40E1184E292F6FA00056EE46 /* MyColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorPicker.swift; sourceTree = "<group>"; };
+		40F3B52E29423286001CDEDF /* NotizyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotizyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				401AF621292BDDFA0050F3D3 /* NotesAddenVC.swift */,
+				40F3B52E29423286001CDEDF /* NotizyView.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				4098AB562919394300EBBD90 /* PageViewController.swift in Sources */,
 				4071F3DC292B91E400C256BF /* FontSizeView.swift in Sources */,
 				40DBC933291567AE00EC71E0 /* SwiftUIViewtest.swift in Sources */,
+				40F3B52F29423286001CDEDF /* NotizyView.swift in Sources */,
 				4054F05428C9CB5100710F30 /* NotizyCardView.swift in Sources */,
 				4090C50328FED3B500CB1D96 /* ModernCellNotizyVC.swift in Sources */,
 				40D23BE8290165DA0056B3AF /* SignUpVC.swift in Sources */,

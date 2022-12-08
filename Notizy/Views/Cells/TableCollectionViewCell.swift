@@ -43,8 +43,8 @@ class TableCollectionViewCell: UICollectionViewCell {
         
         myLabel.frame = CGRect(x: 5,
                                y: contentView.frame.size.height-50,
-                                   width: contentView.frame.size.width-10,
-                                   height: 50)
+                               width: contentView.frame.size.width-10,
+                               height: 50)
     }
     
     public func configure(with model: CollectionTableCellModel) {
@@ -53,20 +53,20 @@ class TableCollectionViewCell: UICollectionViewCell {
         myImageView.image = UIImage(named: "error404")
         
         // Session
-              let session = URLSession.shared
+        let session = URLSession.shared
         let url = URL(string: model.imageName)
-              // Download Task
+        // Download Task
         URLSession.shared.downloadTask(with: url!) { localURL, urlResponse, error in
-      
+            
             if let image = UIImage(data: try! Data(contentsOf: localURL!)){
                 DispatchQueue.main.async {
                     self.myImageView.image = image
                 }
             }
-           
+            
         }.resume()
-      
-              
+        
+        
     }
     
 }
