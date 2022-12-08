@@ -286,8 +286,6 @@
 			children = (
 				40437E5028EDA3BF0058BDA2 /* models.swift */,
 				40BB970F28DDA1E9000ECDCE /* ViewController */,
-				40BB970228DD99DE000ECDCE /* Notizy.xcdatamodeld */,
-				409B306B294119770023C4CE /* APIStruct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,6 +320,8 @@
 				4054F05128C9CB5100710F30 /* SceneDelegate.swift */,
 				4098AB5A29193BF100EBBD90 /* CoreDaten.swift */,
 				409B306D29411E610023C4CE /* ApiService.swift */,
+				409B306B294119770023C4CE /* APIStruct.swift */,
+				40BB970228DD99DE000ECDCE /* Notizy.xcdatamodeld */,
 			);
 			path = Datenbank;
 			sourceTree = "<group>";

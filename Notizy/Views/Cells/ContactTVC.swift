@@ -148,7 +148,7 @@ extension ContactTVC {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Prepare")
-        print(sender!)
+//        print(sender!)
         print("***************")
         guard let destinationVC = segue.destination as? EditVC else { return }
         guard let selectedContact = sender as? Contact else { return }

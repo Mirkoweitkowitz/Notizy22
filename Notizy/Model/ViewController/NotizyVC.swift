@@ -79,27 +79,27 @@ class NotizyVC: UIViewController {
         NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: nil)
     }
     
-    
+   
     
     
     
     private func setUpModels(result:ApiStart) {
-        models.append(.collectionView(models: [CollectionTableCellModel(title: result[14].name, imageName: "notizen in stein"),
+        models.append(.collectionView(models: [CollectionTableCellModel(title: result[0].name, imageName: result[0].imageURL),
                                                
-                                               CollectionTableCellModel(title: result[13].name, imageName: "notizen in stein 2"),
-                                               CollectionTableCellModel(title: result[12].name, imageName: "notizen in stein 4"),
-                                               CollectionTableCellModel(title: result[11].name, imageName: "klassiker"),
-                                               CollectionTableCellModel(title: result[10].name, imageName: "klassische notizen"),
-                                               CollectionTableCellModel(title: result[9].name, imageName: "klassische notizen 1"),
-                                               CollectionTableCellModel(title: result[8].name, imageName: "klassische notizen 2"),
-                                               CollectionTableCellModel(title: result[7].name, imageName: "zukunft der notizen"),
-                                               CollectionTableCellModel(title: result[6].name, imageName: "zukunft der notizen 1"),
-                                               CollectionTableCellModel(title: result[5].name, imageName: "zukunft der notizen 2"),
-                                               CollectionTableCellModel(title: result[4].name, imageName: "zukunft der notizen 3"),
-                                               CollectionTableCellModel(title: result[3].name, imageName: "gegenwart"),
-                                               CollectionTableCellModel(title: result[2].name, imageName: "gegenwart"),
-                                               CollectionTableCellModel(title: result[1].name, imageName: "gegenwart"),
-                                               CollectionTableCellModel(title: result[0].name, imageName: "gegenwart"),
+                                               CollectionTableCellModel(title: result[1].name, imageName: result[1].imageURL),
+                                               CollectionTableCellModel(title: result[2].name, imageName: result[2].imageURL),
+                                               CollectionTableCellModel(title: result[3].name, imageName: result[3].imageURL),
+                                               CollectionTableCellModel(title: result[4].name, imageName: result[4].imageURL),
+                                               CollectionTableCellModel(title: result[5].name, imageName: result[5].imageURL),
+                                               CollectionTableCellModel(title: result[6].name, imageName: result[6].imageURL),
+                                               CollectionTableCellModel(title: result[7].name, imageName: result[7].imageURL),
+                                               CollectionTableCellModel(title: result[8].name, imageName:result[8].imageURL),
+                                               CollectionTableCellModel(title: result[9].name, imageName: result[9].imageURL),
+                                               CollectionTableCellModel(title: result[10].name, imageName: result[10].imageURL),
+                                               CollectionTableCellModel(title: result[11].name, imageName:result[11].imageURL),
+                                               CollectionTableCellModel(title: result[12].name, imageName: result[12].imageURL),
+                                               CollectionTableCellModel(title: result[13].name, imageName: result[13].imageURL),
+                                               CollectionTableCellModel(title: result[14].name, imageName: result[14].imageURL),
                                               
                                               ], rows: 2))
         

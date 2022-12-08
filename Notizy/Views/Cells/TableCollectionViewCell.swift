@@ -49,8 +49,27 @@ class TableCollectionViewCell: UICollectionViewCell {
     
     public func configure(with model: CollectionTableCellModel) {
         myLabel.text = model.title
-        myImageView.image = UIImage(named: model.imageName)
         
+        myImageView.image = UIImage(named: "error404")
+        
+        // Session
+              let session = URLSession.shared
+        let url = URL(string: model.imageName)
+              // Download Task
+        URLSession.shared.downloadTask(with: url!) { localURL, urlResponse, error in
+      
+            if let image = UIImage(data: try! Data(contentsOf: localURL!)){
+                DispatchQueue.main.async {
+                    self.myImageView.image = image
+                }
+            }
+           
+        }.resume()
+      
+              
     }
     
 }
+
+
+

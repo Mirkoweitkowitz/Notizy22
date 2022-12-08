@@ -121,7 +121,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bildschirmfoto 2022-09-16 um 10.35.55" translatesAutoresizingMaskIntoConstraints="NO" id="uN6-MY-c4L">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="uN6-MY-c4L">
                                 <rect key="frame" x="68" y="84" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="LqD-Bh-AwM"/>
@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9U-cY-5rB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3094" y="662"/>
+            <point key="canvasLocation" x="-3191" y="850"/>
         </scene>
         <!--Notizy-->
         <scene sceneID="tne-QT-ifu">
@@ -404,18 +404,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" badgeValue="Home" id="yna-fz-FUx"/>
                     <navigationItem key="navigationItem" id="7yB-xe-mab">
-                        <rightBarButtonItems>
-                            <barButtonItem image="arrowshape.right.fill" catalog="system" id="te6-Bx-hck">
-                                <connections>
-                                    <segue destination="mTm-18-Pvb" kind="show" id="jfs-kR-YuU"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="camera" id="5Wz-9m-0Nd">
-                                <connections>
-                                    <action selector="touchUpInsideCameraButton:" destination="BYZ-38-t0r" id="JcJ-6d-OtN"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="5Wz-9m-0Nd">
+                            <connections>
+                                <action selector="touchUpInsideCameraButton:" destination="BYZ-38-t0r" id="JcJ-6d-OtN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="homeView" destination="e4d-NS-leb" id="dtg-Qb-CDm"/>
@@ -425,7 +418,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1057" y="-365"/>
+            <point key="canvasLocation" x="-2975" y="-514"/>
         </scene>
         <!--Notizen GeschichteVC-->
         <scene sceneID="n46-pJ-0kV">
@@ -512,7 +505,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOK-Uh-DGS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-300" y="388.66995073891627"/>
+            <point key="canvasLocation" x="-1279" y="337"/>
         </scene>
         <!--Notes AddenVC-->
         <scene sceneID="UBE-CJ-L8d">
@@ -584,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Zg-Qy-q0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="-365"/>
+            <point key="canvasLocation" x="-1708" y="-514"/>
         </scene>
         <!--Item-->
         <scene sceneID="CJh-0a-7Pq">
@@ -659,7 +652,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Xc-ZV-b6O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1058" y="-1403"/>
+            <point key="canvasLocation" x="-5290" y="-240"/>
         </scene>
         <!--Notizy CollectionVC-->
         <scene sceneID="mak-NL-CeM">
@@ -734,13 +727,7 @@
                             <constraint firstItem="qGN-fJ-TDm" firstAttribute="bottom" secondItem="2gI-hS-79R" secondAttribute="bottom" id="roD-DO-Mi3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iMQ-zT-vOU">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrowshape.right.fill" catalog="system" id="ZZ7-bF-mZy">
-                            <connections>
-                                <segue destination="SnY-FY-rUx" kind="show" identifier="colorcell" id="ST3-tA-1cQ"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="iMQ-zT-vOU"/>
                     <connections>
                         <outlet property="collView" destination="2gI-hS-79R" id="Jff-09-awJ"/>
                         <segue destination="ifb-rr-Lbk" kind="show" identifier="DetailCell" id="YGW-E3-mw6"/>
@@ -748,7 +735,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lc2-3X-iog" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306" y="-365"/>
+            <point key="canvasLocation" x="-511" y="-514"/>
         </scene>
         <!--Modern Cell NotizyVC-->
         <scene sceneID="sQo-GN-ubk">
@@ -771,17 +758,11 @@
                             <constraint firstItem="VyC-gN-Ab8" firstAttribute="leading" secondItem="t5Q-9r-JYt" secondAttribute="leading" id="qqF-ij-G5p"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="eRu-P1-HZF">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrowshape.right" catalog="system" id="5R8-tP-Atg">
-                            <connections>
-                                <segue destination="qlX-pi-qDR" kind="show" identifier="Visitenkarte" id="hIo-Zl-6ey"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="eRu-P1-HZF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYS-oq-7Ef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2212" y="-365"/>
+            <point key="canvasLocation" x="566" y="-514"/>
         </scene>
         <!--Collection View TaskVC-->
         <scene sceneID="HqR-eD-4ry">
@@ -803,7 +784,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atJ-q2-HP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3020" y="-365"/>
+            <point key="canvasLocation" x="1810" y="-514"/>
         </scene>
         <!--Home-->
         <scene sceneID="AIT-BB-4It">
@@ -822,7 +803,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hm7-J7-0mk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3095" y="-336"/>
+            <point key="canvasLocation" x="-4191" y="-514"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ere-dD-V2n">
@@ -847,7 +828,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whK-z1-kfm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5727" y="-522"/>
+            <point key="canvasLocation" x="-6270" y="-513"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dJq-G4-EfN">
@@ -1045,7 +1026,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTj-Ss-jsr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3182" y="1487"/>
+            <point key="canvasLocation" x="-4191" y="1637"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="3Pm-SQ-EGL">
@@ -1125,7 +1106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxP-xl-9sf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4686" y="-2551"/>
+            <point key="canvasLocation" x="-5290" y="-1428"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="1yn-r1-wcT">
@@ -1224,7 +1205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Q1-x7-WQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3417" y="-2764"/>
+            <point key="canvasLocation" x="-4391" y="-1428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BSo-UD-6oU">
@@ -1244,7 +1225,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="81q-Ub-W4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="542" y="-1396"/>
+            <point key="canvasLocation" x="-1926" y="-1297"/>
         </scene>
         <!--NotizyVC-->
         <scene sceneID="b2V-sf-Upg">
@@ -1272,7 +1253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3R-5o-5cx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1708" y="-1397"/>
+            <point key="canvasLocation" x="-769" y="-1298"/>
         </scene>
         <!--Scans-->
         <scene sceneID="rqQ-Hq-C4q">
@@ -1295,7 +1276,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPq-pE-2Mr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="-2587"/>
+            <point key="canvasLocation" x="-3095" y="-2208"/>
         </scene>
         <!--Notizy Card View-->
         <scene sceneID="wpq-Zw-UHa">
@@ -1396,9 +1377,7 @@
                             <constraint firstItem="DEi-YF-9iv" firstAttribute="leading" secondItem="JJP-XH-gcR" secondAttribute="leading" id="yTb-XX-RLt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1VZ-5p-sY4">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrowshape.right" catalog="system" id="RWj-HY-Rsu"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="1VZ-5p-sY4"/>
                     <connections>
                         <outlet property="ScanView" destination="Auf-Vc-a7A" id="QkV-Yo-2xz"/>
                         <outlet property="cameraButton" destination="lbx-2u-IgK" id="I44-32-qRK"/>
@@ -1407,7 +1386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tP-76-Heq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927" y="-3149"/>
+            <point key="canvasLocation" x="-2274" y="-2967"/>
         </scene>
         <!--Scanner View Controller-->
         <scene sceneID="3hD-hv-rb5">
@@ -1483,7 +1462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRc-bD-SbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821.5999999999999" y="-2633.497536945813"/>
+            <point key="canvasLocation" x="-2012" y="-2209"/>
         </scene>
         <!--Login-->
         <scene sceneID="xUZ-Bb-X2e">
@@ -1502,7 +1481,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwX-vl-Cg8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5868" y="-2202"/>
+            <point key="canvasLocation" x="-6271" y="-1428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="F5k-jg-Ntz">
@@ -1549,7 +1528,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTX-UJ-oFm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-948" y="1218"/>
+            <point key="canvasLocation" x="-2012" y="1099"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="igX-1V-HLG">
@@ -1559,7 +1538,7 @@
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEA-Ii-vya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-137" y="1218"/>
+            <point key="canvasLocation" x="-1058" y="1099"/>
         </scene>
         <!--Detail Collection View-->
         <scene sceneID="nhW-jy-Ge6">
@@ -1619,7 +1598,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fnm-Hg-daw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1305" y="337"/>
+            <point key="canvasLocation" x="-31" y="337"/>
         </scene>
         <!--Ver Documento View Controller-->
         <scene sceneID="nby-SD-52j">
@@ -1649,9 +1628,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Trl-Wl-aO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2729" y="-2156"/>
+            <point key="canvasLocation" x="-207" y="-2209"/>
         </scene>
-        <!--Generar Código QR-->
+        <!--QR Generator-->
         <scene sceneID="743-GA-kyy">
             <objects>
                 <viewController id="8WP-30-jf5" customClass="QRViewController" customModule="Notizy" customModuleProvider="target" sceneMemberID="viewController">
@@ -1688,7 +1667,7 @@
                             <constraint firstItem="Xzh-Rt-NC5" firstAttribute="leading" secondItem="iox-Z8-M84" secondAttribute="leading" constant="15" id="xlH-cQ-qdV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Generar Código QR" id="oQS-gY-oM7">
+                    <navigationItem key="navigationItem" title="QR Generator" id="oQS-gY-oM7">
                         <barButtonItem key="rightBarButtonItem" title="Generar" id="k1e-W9-lbn">
                             <connections>
                                 <action selector="generarButton:" destination="8WP-30-jf5" id="6Kz-DB-KWM"/>
@@ -1702,29 +1681,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUI-eJ-3rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2780" y="-2873"/>
+            <point key="canvasLocation" x="-1058" y="-2682"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="RlD-e2-y6Q"/>
         <segue reference="oAi-wC-rn6"/>
         <segue reference="eFi-kN-939"/>
-        <segue reference="hIo-Zl-6ey"/>
-        <segue reference="ST3-tA-1cQ"/>
-        <segue reference="Ki1-Ti-VJt"/>
         <segue reference="CzH-p8-YiW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Bildschirmfoto 2022-08-19 um 10.46.36" width="1074" height="1162"/>
         <image name="Bildschirmfoto 2022-08-19 um 10.46.54" width="1294" height="1342"/>
-        <image name="Bildschirmfoto 2022-09-16 um 10.35.55" width="379" height="508"/>
         <image name="Notizy" width="1952" height="2920"/>
         <image name="NotizyBackground" width="1440" height="2408"/>
         <image name="apple.logo" catalog="system" width="105" height="128"/>
         <image name="applelogo" catalog="system" width="105" height="128"/>
         <image name="arrowshape.backward" catalog="system" width="128" height="104"/>
         <image name="arrowshape.right" catalog="system" width="128" height="104"/>
-        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
         <image name="background" width="227" height="340"/>
         <image name="camera" catalog="system" width="128" height="93"/>
         <image name="camera.fill" catalog="system" width="128" height="93"/>

@@ -50,21 +50,21 @@ struct ApiService{
         //MARK: 4. API Call starten / fortsetzen
         dataTask.resume()
     }
-    // MARK: Download Image
-    func downloadImage(imageUrl: URL, completion: @escaping(UIImage) -> Void) {
-        
-        // Session
-        let session = URLSession.shared
-        
-        // Download Task
-        let downloadTask = session.downloadTask(with: imageUrl) { localURL, urlResponse, error in
-            
-            let image = UIImage(data: try! Data(contentsOf: localURL!))!
-            completion(image)
-        }
-        
-        downloadTask.resume()
-    }
+//    // MARK: Download Image
+//    func downloadImage(imageUrl: URL, completion: @escaping(UIImage) -> Void) {
+//
+//        // Session
+//        let session = URLSession.shared
+//
+//        // Download Task
+//        let downloadTask = session.downloadTask(with: imageUrl) { localURL, urlResponse, error in
+//
+//            let image = UIImage(data: try! Data(contentsOf: localURL!))!
+//            completion(image)
+//        }
+//
+//        downloadTask.resume()
+//    }
 }
 
 //
